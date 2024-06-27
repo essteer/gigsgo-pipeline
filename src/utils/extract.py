@@ -82,7 +82,7 @@ def get_regex_matches(text: str) -> list[re.Match]:
         r"""
         (?P<weekday>[FMSTW][a-z]{2,5}day)   # English day of week
         \s?
-        星期[⼀二三四五六日]                   # Chinese day of week
+        星期[⼀一二三四五六日]                 # Chinese day of week (including char variants)
         \s?[\w\s]+                          # Longform date
         (?P<month>(\d){1,2})月              # Month
         (?P<date>(\d){1,2})日               # Date
