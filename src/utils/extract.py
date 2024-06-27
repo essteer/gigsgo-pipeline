@@ -1,6 +1,19 @@
 import quopri
 import re
+import requests
 from bs4 import BeautifulSoup
+from masquer import masq
+
+
+def get_html(url: str) -> str:
+    """
+    Uses requests to scrape HTML from target URL
+    """
+    # Send header to prevent 403 error
+    headers = masq(True, True)
+    response = requests.get(url, headers=headers)
+
+    return response.text
 
 
 def parse_html(html: str) -> str:
@@ -37,6 +50,9 @@ def preprocess_text(raw_text: str) -> str:
     text = re.sub(r"day=E6", "day =E6", text)
     # Remove overlooked HTML tags, non-greedy
     text = re.sub(r"<.*?>", "", text)
+    # Replace non-standard punctuation with ASCII versions
+    text = text.replace("–", "-")
+    text = text.replace("’", "'")
 
     return text
 
@@ -88,7 +104,7 @@ def get_regex_matches(text: str) -> list[re.Match]:
         (?P<date>(\d){1,2})日               # Date
 
         \s?
-        (?P<desc>.*?[^V])                   # Event description
+        (?P<desc>.*?)?\s?                   # Event description
         Venue\s地點:\s?                      # "Venue 地點:"
         (?P<venue>.*?)                      # Venue name, non-greedy
         
@@ -96,10 +112,10 @@ def get_regex_matches(text: str) -> list[re.Match]:
         (?P<open>                           # Start time
         \d{1,2}                             # Hour
         (:\d{2})?                           # Minutes (optional)
-        ([APMapm]{2})?)                     # am/pm (optional)
+        ([AaPp]{1}\s?[Mm]{1})?)             # am/pm (optional, with possible space before "m")
         \s?-\s?                             # hyphen with or without spaces
         (?P<close>                          # End time
-        (\d{1,2}(:\d{2})?([APMapm]{2})?     # Logic as per start time
+        (\d{1,2}(:\d{2})?\s*([AaPp]{1}\s?[Mm]{1})?  # Logic as per start time
         |[Ll][Aa][Tt][Ee]))                   # End time may be "late"
         
         \sBands\s樂隊:\s?                     # "Bands 樂隊:"
