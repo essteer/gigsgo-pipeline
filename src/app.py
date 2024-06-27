@@ -1,4 +1,9 @@
-from utils.extract import parse_html, preprocess_text, decode_quoted_printable_text, get_regex_matches
+from utils.extract import (
+    parse_html,
+    preprocess_text,
+    decode_quoted_printable_text,
+    get_regex_matches,
+)
 from utils.transform import format_matches
 
 
@@ -16,18 +21,12 @@ def data_pipeline(raw_html: str):
     matches = get_regex_matches(text)
     # Format matches
     formatted_matches = format_matches(matches)
-    # Create Gig class instances from gigs
-    # gig_instances = create_gig_instances(gig_matches)
 
-    # print(gig_instances)
-    print(len(formatted_matches))
+    print(formatted_matches)
 
 
 if __name__ == "__main__":
-    from assets.html_demo_1 import HTML_1
     from assets.html_demo_2 import HTML_2
-    from assets.html_demo_3 import HTML_3
-    from assets.html_demo_4 import HTML_4
 
     # data_pipeline(HTML_1)
     data_pipeline(HTML_2)

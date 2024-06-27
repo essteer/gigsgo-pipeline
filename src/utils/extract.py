@@ -12,7 +12,7 @@ def parse_html(html: str) -> str:
 
 def preprocess_text(raw_text: str) -> str:
     """
-    Applies regex to preprocess text
+    Applies regex to preprocess text before decoding
 
     Parameters
     ----------
@@ -105,7 +105,7 @@ def get_regex_matches(text: str) -> list[re.Match]:
         \sBands\s樂隊:\s?                     # "Bands 樂隊:"
         (?P<bands>.*?)                       # Bands info, non-greedy
         \s?Ticket\s(門|⾨)票:\s?              # "Ticket 門票:" or "Ticket ⾨票:" (character variants)
-        (?P<ticket>.*?                       # Ticket info, non-greedy
+        (?P<tickets>.*?                       # Ticket info, non-greedy
         (?=([FMSTW][a-z]{2,5}day|Enjoy|$)))  # Lookahead to day, "Enjoy" or end of string
         """,
         re.VERBOSE | re.DOTALL,
