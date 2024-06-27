@@ -35,6 +35,9 @@ def convert_to_24_hour_time(time_str: str) -> str:
     -------
     time_str in 24-hour format
     """
+    if time_str is None:
+        return "??:??"
+
     match = re.match(r"(\d{1,2}):?(\d{2})?(am|pm)", time_str.lower())
 
     if not match:  # "late" rarely appears so don't check by default
@@ -133,7 +136,7 @@ def convert_ticket_prices(prices: str) -> dict:
         map of tier descriptions to ticket prices
         for a given event
     """
-    if prices == "Free Entry 免費入場" or prices == "Free Entry 免費⼊場":
+    if "free entry" in prices.lower():
         return {"standard": 0}
 
     ticket_prices = dict()
@@ -165,15 +168,24 @@ def format_matches(matches: list[re.Match]) -> list[dict]:
     # Add matches to list
     for match in matches:
         # Create dict object
-        event = {key: value.strip() for key, value in match.groupdict().items()}
+        event = {
+            key: (value.strip() if value is not None else None)  # handle missing values
+            for key, value in match.groupdict().items()
+        }
         # Convert weekday names to digits
         event["weekday"] = convert_days_to_digits(event["weekday"])
         # Convert month and date strings to int
         event["month"] = int(event["month"])
         event["date"] = int(event["date"])
+
+        if event["desc"] == "":
+            # Add description if missing
+            event["desc"] = "Unknown"
+
         # Convert times to 24-hour strings
         event["open"] = convert_to_24_hour_time(event["open"])
         event["close"] = convert_to_24_hour_time(event["close"])
+
         # Parse ticket prices by tier
         event["tickets"] = convert_ticket_prices(event["tickets"])
         # Add event to instance list

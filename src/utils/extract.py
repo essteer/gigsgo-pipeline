@@ -113,14 +113,15 @@ def get_regex_matches(text: str) -> list[re.Match]:
         \d{1,2}                             # Hour
         (:\d{2})?                           # Minutes (optional)
         ([AaPp]{1}\s?[Mm]{1})?)             # am/pm (optional, with possible space before "m")
-        \s?-\s?                             # hyphen with or without spaces
+        \s?-?\s?                             # hyphen with or without spaces
+        
         (?P<close>                          # End time
         (\d{1,2}(:\d{2})?\s*([AaPp]{1}\s?[Mm]{1})?  # Logic as per start time
-        |[Ll][Aa][Tt][Ee]))                   # End time may be "late"
+        |[Ll][Aa][Tt][Ee]))?                 # End time may be "late"
         
-        \sBands\s樂隊:\s?                     # "Bands 樂隊:"
+        \s?Bands\s*樂隊:\s?                     # "Bands 樂隊:"
         (?P<bands>.*?)                       # Bands info, non-greedy
-        \s?Ticket\s(門|⾨)票:\s?              # "Ticket 門票:" or "Ticket ⾨票:" (character variants)
+        \s?Ticket\s?(門|⾨)票:\s?              # "Ticket 門票:" or "Ticket ⾨票:" (character variants)
         (?P<tickets>.*?                       # Ticket info, non-greedy
         (?=([FMSTW][a-z]{2,5}day|Enjoy|$)))  # Lookahead to day, "Enjoy" or end of string
         """,
