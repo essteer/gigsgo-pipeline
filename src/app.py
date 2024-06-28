@@ -38,13 +38,4 @@ def data_pipeline(target: str, url: bool = True):
 
 
 if __name__ == "__main__":
-    from assets.html_demo_1 import HTML_1
-    from assets.html_demo_2 import HTML_2
-    from assets.html_demo_3 import HTML_3
-    from assets.html_demo_4 import HTML_4
-
-    data_pipeline(HTML_1, False)  # 93 gigs
-    data_pipeline(HTML_2, False)  # 113 gigs
-    data_pipeline(HTML_3, False)  # 88 gigs
-    data_pipeline(HTML_4, False)  # 115 gigs
-    data_pipeline(os.environ["HTML_5"])  # 84 gigs
+    data_pipeline(os.environ["EXAMPLE"])

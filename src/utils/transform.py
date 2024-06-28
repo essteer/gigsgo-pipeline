@@ -1,4 +1,5 @@
 import re
+from .maps import DAY_MAP, GENRE_MAP, LOCATION_LIST, TIER_MAP
 
 
 def convert_days_to_digits(day_string) -> int:
@@ -6,17 +7,7 @@ def convert_days_to_digits(day_string) -> int:
     Converts weekday names to digit equivalent
     Monday -> 1
     """
-    day_digits = {
-        "monday": 1,
-        "tuesday": 2,
-        "wednesday": 3,
-        "thursday": 4,
-        "friday": 5,
-        "saturday": 6,
-        "sunday": 7,
-    }
-
-    return day_digits[day_string.lower()]
+    return DAY_MAP[day_string.lower()]
 
 
 def convert_to_24_hour_time(time_str: str) -> str:
@@ -78,21 +69,6 @@ def match_ticket_tiers(price_string: str) -> tuple:
     _ : int
         price
     """
-    tier_map = {
-        "1-day ticket 一日票": "1_day",
-        "3-day ticket 三日票": "3_day",
-        "advance 預售": "advance",
-        "after party": "after_party",
-        "door 即場": "door",
-        "early-bird 早鳥": "advance",
-        "fringe club member 藝穗會會員": "member",
-        "full time student 全日制學生": "student",
-        "monthly pass 月票": "monthly_pass",
-        "regular 正價": "standard",
-        "student 學生": "student",
-        "vip": "vip",
-        "walk-in 即場": "door",
-    }
     pattern = re.compile(
         r"""
         (?:HK)?   # optional HK prefix
@@ -112,11 +88,11 @@ def match_ticket_tiers(price_string: str) -> tuple:
             # Interpret blank tier descriptions as "standard"
             return "standard", int(matches[0][0])
 
-        if matches[0][1].lower() in tier_map:
-            # Get tier description from tier_map
-            return tier_map[matches[0][1].lower()], int(matches[0][0])
+        if matches[0][1].lower() in TIER_MAP:
+            # Get tier description from TIER_MAP
+            return TIER_MAP[matches[0][1].lower()], int(matches[0][0])
 
-        # Return tier description as-is if not in tier_map
+        # Return tier description as-is if not in TIER_MAP
         print(f"Unknown price tier: {matches[0][1]}")
         return matches[0][1], int(matches[0][0])
 
@@ -147,6 +123,119 @@ def convert_ticket_prices(prices: str) -> dict:
         ticket_prices[tier] = price
 
     return ticket_prices
+
+
+def split_genres(genres: str) -> list[str]:
+    """
+    Creates a list of genres from a string
+
+    Parameters
+    ----------
+    genres : str
+        genres associated with a band
+
+    Returns
+    -------
+    list[str]
+        genres separated into list elements
+    """
+    if any(genres in loc for loc in LOCATION_LIST):
+        return None
+
+    parts = re.split(r"[,/]", genres)
+
+    genre_list = list()
+    for part in parts:
+        genre_list.extend(part.split(" & "))
+
+    genre_list = [genre.lower().strip() for genre in genre_list]
+
+    return [GENRE_MAP[genre] if genre in GENRE_MAP else genre for genre in genre_list]
+
+
+def parse_genres(genre_string: str) -> list[str]:
+    """
+    Applies regex to find genre info a string
+
+    Parameters
+    ----------
+    genre_string : str
+        band and genre string to parse
+
+    Returns
+    -------
+    genre_list : list[str]
+        sorted list of genres found
+    """
+    # Grab text between "()" signs
+    pattern = re.compile(r"\(([^\)]+)\)?")
+    # May be 0 or multiple matches
+    matches = pattern.findall(genre_string)
+    if matches:
+        genre_list = list()
+        for match in matches:
+            genres = split_genres(match)
+            if genres is not None:
+                genre_list.extend(genres)
+
+        if genre_list and len(genre_list) > 1:
+            return sorted(list(set(genre_list)))
+        return genre_list
+
+    return ["unknown"]
+
+
+def parse_band_name(band_string: str) -> str:
+    """
+    Extracts a band name from a string
+
+    Parameters
+    ----------
+    band_string : str
+        band with genre info
+
+    Returns
+    -------
+    band : str
+        band name
+    """
+    # Grab text until a "(" sign
+    pattern = re.compile(r"([^\(]+)\s*\(?")
+    # Get band name
+    match = pattern.search(band_string)
+    if match:
+        band = match.group(1).strip()
+        return band
+
+    return "unknown"
+
+
+def parse_all_bands_and_genres(bands_string: str) -> list[dict]:
+    """
+    Extracts band and genre info into a list
+    with a dict for each band's name and declared genres
+
+    Parameters
+    ----------
+    bands_string : str
+        bands and genres from event content
+
+    Returns
+    -------
+    new_bands_list : list[dict]
+        list of dict for each band
+        containing name and genre details
+    """
+    bands_list = bands_string.split("),")
+    new_bands_list = list()
+
+    for band in bands_list:
+        band = band.strip()
+        band_name = parse_band_name(band)
+        band_genre = parse_genres(band)
+        new_bands_list.append({"name": band_name, "genre": band_genre})
+
+    return new_bands_list
 
 
 def format_matches(matches: list[re.Match]) -> list[dict]:
@@ -185,6 +274,9 @@ def format_matches(matches: list[re.Match]) -> list[dict]:
         # Convert times to 24-hour strings
         event["open"] = convert_to_24_hour_time(event["open"])
         event["close"] = convert_to_24_hour_time(event["close"])
+
+        # Get list of bands and their genres
+        event["bands"] = parse_all_bands_and_genres(event["bands"])
 
         # Parse ticket prices by tier
         event["tickets"] = convert_ticket_prices(event["tickets"])

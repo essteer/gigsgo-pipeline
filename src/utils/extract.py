@@ -108,7 +108,7 @@ def get_regex_matches(text: str) -> list[re.Match]:
         Venue\s地點:\s?                      # "Venue 地點:"
         (?P<venue>.*?)                      # Venue name, non-greedy
         
-        \sTime\s時間:\s?                     # "Time 時間:"
+        \s?Time\s時間:\s?                     # "Time 時間:"
         (?P<open>                           # Start time
         \d{1,2}                             # Hour
         (:\d{2})?                           # Minutes (optional)
