@@ -1,6 +1,5 @@
 import os
 import sys
-from dotenv import load_dotenv
 
 sys.path.append(os.path.join(os.path.dirname(__file__)))
 from utils.extract import (
@@ -11,8 +10,6 @@ from utils.extract import (
     get_regex_matches,
 )
 from utils.transform import format_matches
-
-load_dotenv()
 
 
 def data_pipeline(target: str, url: bool = True):
@@ -41,4 +38,4 @@ def data_pipeline(target: str, url: bool = True):
 
 
 if __name__ == "__main__":
-    data_pipeline(os.environ["EXAMPLE"])
+    data_pipeline()
