@@ -13,10 +13,10 @@ from src.utils.extract import (
     get_regex_matches,
 )
 from src.utils.maps import DAY_MAP
-from assets.ex01 import HTML_1
-from assets.ex02 import HTML_2
-from assets.ex03 import HTML_3
-from assets.ex04 import HTML_4
+from tests.assets.ex01 import HTML_1
+from tests.assets.ex02 import HTML_2
+from tests.assets.ex03 import HTML_3
+from tests.assets.ex04 import HTML_4
 
 TEST_ASSETS = os.path.abspath(os.path.join("tests", "assets"))
 TEST_CASES = [HTML_1, HTML_2, HTML_3, HTML_4]
