@@ -19,7 +19,6 @@ classifiers = [
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
@@ -28,7 +27,6 @@ classifiers = [
 [project.optional-dependencies]
 dev = [
     "pre-commit==3.7.1",
-    "python-dotenv==1.0.1",
     "ruff>=0.4.10",
 ]
 
