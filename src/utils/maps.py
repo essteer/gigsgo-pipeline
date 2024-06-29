@@ -26,4 +26,4 @@ TIER_MAP = {
 
 GENRE_MAP = {"r'n'b": "r&b", "rnb": "r&b", "r&b": "r&b"}
 
-LOCATION_LIST = ["Japan 日本"]
+LOCATION_LIST = ["Japan", "日本", "China", "中國"]

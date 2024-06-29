@@ -139,7 +139,7 @@ def split_genres(genres: str) -> list[str]:
     list[str]
         genres separated into list elements
     """
-    if any(genres in loc for loc in LOCATION_LIST):
+    if any(loc in genres for loc in LOCATION_LIST):
         return None
 
     parts = re.split(r"[,/]", genres)
