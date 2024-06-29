@@ -1,7 +1,6 @@
 import os
 import sys
 import unittest
-from dotenv import load_dotenv
 
 sys.path.append(os.path.join(os.path.dirname(__file__)))
 from src.app import data_pipeline
@@ -11,10 +10,9 @@ from tests.assets.ex03 import HTML_3
 from tests.assets.ex04 import HTML_4
 
 
-load_dotenv()
-
 TEST_ASSETS = os.path.abspath(os.path.join("tests", "assets"))
 TEST_CASES = [HTML_1, HTML_2, HTML_3, HTML_4]
+TEST_URL = "https://undergroundhk.com/gig-guide-27th-june-11th-july-2024/"
 
 
 class TestDataPipeline(unittest.TestCase):
@@ -26,7 +24,7 @@ class TestDataPipeline(unittest.TestCase):
                 sum(1 for _ in data_pipeline(test_case, False)), num_matches[test_case]
             )
         # NOTE: this test relies on external source, check source if not found
-        self.assertEqual(sum(1 for _ in data_pipeline(os.environ["EXAMPLE"])), 84)
+        self.assertEqual(sum(1 for _ in data_pipeline(TEST_URL)), 84)
 
     def test_matches_are_dicts(self):
         """Test all matches in dict format"""
@@ -35,7 +33,7 @@ class TestDataPipeline(unittest.TestCase):
             for match in matches:
                 self.assertIsInstance(match, dict)
         # NOTE: this test relies on external source, check source if not found
-        matches = data_pipeline(os.environ["EXAMPLE"])
+        matches = data_pipeline(TEST_URL)
         for match in matches:
             self.assertIsInstance(match, dict)
 
@@ -54,7 +52,7 @@ class TestDataPipeline(unittest.TestCase):
                 self.assertIn("bands", match)
                 self.assertIn("tickets", match)
         # NOTE: this test relies on external source, check source if not found
-        matches = data_pipeline(os.environ["EXAMPLE"])
+        matches = data_pipeline(TEST_URL)
         for match in matches:
             self.assertIn("weekday", match)
             self.assertIn("month", match)

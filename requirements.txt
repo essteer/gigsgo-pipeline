@@ -10,8 +10,6 @@ idna==3.7
     # via requests
 masquer==1.2.0
     # via gigshk-pipeline (pyproject.toml)
-python-dotenv==1.0.1
-    # via gigshk-pipeline (pyproject.toml)
 requests==2.32.3
     # via gigshk-pipeline (pyproject.toml)
 soupsieve==2.5
