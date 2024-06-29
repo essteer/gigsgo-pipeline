@@ -1,6 +1,9 @@
 import os
+import sys
 import unittest
 from dotenv import load_dotenv
+
+sys.path.append(os.path.join(os.path.dirname(__file__)))
 from src.app import data_pipeline
 from tests.assets.ex01 import HTML_1
 from tests.assets.ex02 import HTML_2

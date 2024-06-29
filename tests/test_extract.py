@@ -1,6 +1,10 @@
 import os
 import re
+import sys
 import unittest
+
+
+sys.path.append(os.path.join(os.path.dirname(__file__)))
 from src.utils.extract import (
     get_html,
     parse_html,
