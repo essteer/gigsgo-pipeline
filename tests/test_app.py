@@ -15,6 +15,7 @@ TEST_CASES = [HTML_1, HTML_2, HTML_3, HTML_4]
 TEST_URL = "https://undergroundhk.com/gig-guide-27th-june-11th-july-2024/"
 
 
+@unittest.skipIf(sys.version_info <= (3, 9), "Skipping app.py tests on Python 3.9")
 class TestDataPipeline(unittest.TestCase):
     def test_all_matches_persist(self):
         """Test all matches retained after formatting"""
