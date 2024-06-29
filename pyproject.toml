@@ -6,6 +6,7 @@ authors = [{ name = "Elliott Steer", email = "essteer@pm.me" }]
 dependencies = [
     "beautifulsoup4==4.12.3",
     "masquer==1.2.0",
+    "python-dotenv==1.0.1",
     "requests==2.32.3",
 ]
 requires-python = ">=3.9"
@@ -28,7 +29,6 @@ classifiers = [
 [project.optional-dependencies]
 dev = [
     "pre-commit==3.7.1",
-    "python-dotenv==1.0.1",
     "ruff>=0.4.10",
 ]
 
