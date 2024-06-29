@@ -1,5 +1,5 @@
 import re
-from .maps import DAY_MAP, GENRE_MAP, LOCATION_LIST, TIER_MAP
+from utils.maps import DAY_MAP, GENRE_MAP, LOCATION_LIST, TIER_MAP
 
 
 def convert_days_to_digits(day_string) -> int:

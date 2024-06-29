@@ -1,13 +1,16 @@
 import os
+import sys
 from dotenv import load_dotenv
-from .utils.extract import (
+
+sys.path.append(os.path.join(os.path.dirname(__file__)))
+from utils.extract import (
     get_html,
     parse_html,
     preprocess_text,
     decode_quoted_printable_text,
     get_regex_matches,
 )
-from .utils.transform import format_matches
+from utils.transform import format_matches
 
 load_dotenv()
 

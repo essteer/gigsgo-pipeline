@@ -1,11 +1,12 @@
 import os
 import unittest
 from dotenv import load_dotenv
+from src.app import data_pipeline
 from tests.assets.ex01 import HTML_1
 from tests.assets.ex02 import HTML_2
 from tests.assets.ex03 import HTML_3
 from tests.assets.ex04 import HTML_4
-from src.app import data_pipeline
+
 
 load_dotenv()
 
