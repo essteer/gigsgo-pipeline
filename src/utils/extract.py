@@ -1,6 +1,7 @@
 import quopri
 import re
 import requests
+import time
 from bs4 import BeautifulSoup
 from masquer import masq
 
@@ -9,11 +10,19 @@ def get_html(url: str) -> str:
     """
     Uses requests to scrape HTML from target URL
     """
-    # Send header to prevent 403 error
-    headers = masq(True, True)
-    response = requests.get(url, headers=headers)
+    # Make request and catch response errors and retry
+    for i in range(3):
+        try:
+            # Send header to prevent 403 error
+            headers = masq(True, True)
+            response = requests.get(url, headers=headers)
+            # Catch errors
+            response.raise_for_status()
 
-    return response.text
+            return response.text
+
+        except requests.exceptions.RequestException:
+            time.sleep(2 ** (i + 1))
 
 
 def parse_html(html: str) -> str:
@@ -44,8 +53,6 @@ def preprocess_text(raw_text: str) -> str:
     text = re.sub(r"=\s+", "", text)
     # Insert single space before "(" char if absent
     text = re.sub(r"(\S)(\()", r"\1 (", text)
-    # Replace multiple "\s" chars with single "\s" char
-    text = re.sub(r"\s+", " ", text)
     # Insert missing space between English and Chinese day of week
     text = re.sub(r"day=E6", "day =E6", text)
     # Remove overlooked HTML tags, non-greedy
@@ -53,6 +60,8 @@ def preprocess_text(raw_text: str) -> str:
     # Replace non-standard punctuation with ASCII versions
     text = text.replace("–", "-")
     text = text.replace("’", "'")
+    # Replace multiple "\s" chars with single "\s" char
+    text = re.sub(r"\s+", " ", text)
 
     return text
 
@@ -105,10 +114,10 @@ def get_regex_matches(text: str) -> list[re.Match]:
 
         \s?
         (?P<desc>.*?)?\s?                   # Event description
-        Venue\s地點:\s?                      # "Venue 地點:"
+        Venue\s?地點:\s?                      # "Venue 地點:"
         (?P<venue>.*?)                      # Venue name, non-greedy
         
-        \s?Time\s時間:\s?                     # "Time 時間:"
+        \s?Time\s?時間:\s?                     # "Time 時間:"
         (?P<open>                           # Start time
         \d{1,2}                             # Hour
         (:\d{2})?                           # Minutes (optional)
