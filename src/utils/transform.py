@@ -1,5 +1,9 @@
+import os
 import re
-from utils.maps import DAY_MAP, GENRE_MAP, LOCATION_LIST, TIER_MAP
+import sys
+
+sys.path.append(os.path.join(os.path.dirname(__file__)))
+from maps import DAY_MAP, GENRE_MAP, LOCATION_LIST, TIER_MAP
 
 
 def convert_days_to_digits(day_string) -> int:
@@ -29,7 +33,7 @@ def convert_to_24_hour_time(time_str: str) -> str:
     if time_str is None:
         return "??:??"
 
-    match = re.match(r"(\d{1,2}):?(\d{2})?(am|pm)", time_str.lower())
+    match = re.match(r"(\d{1,2}):?(\d{2})?\s*(a\s?m|p\s?m)", time_str.lower())
 
     if not match:  # "late" rarely appears so don't check by default
         if time_str.lower() == "late":
@@ -40,9 +44,9 @@ def convert_to_24_hour_time(time_str: str) -> str:
     hour, minute, period = match.groups()
     hour = int(hour)
 
-    if period == "pm" and hour != 12:
+    if ("pm" in period or "p m" in period) and hour != 12:
         hour += 12
-    elif period == "am" and hour == 12:
+    elif ("am" in period or "a m" in period) and hour == 12:
         hour = 0
 
     if minute:
@@ -87,10 +91,11 @@ def match_ticket_tiers(price_string: str) -> tuple:
         if matches[0][1] == "":
             # Interpret blank tier descriptions as "standard"
             return "standard", int(matches[0][0])
-
-        if matches[0][1].lower() in TIER_MAP:
+        # Remove spaces to avoid whitespace typos
+        spaceless_match = matches[0][1].replace(" ", "").replace("-", "").lower()
+        if spaceless_match in TIER_MAP:
             # Get tier description from TIER_MAP
-            return TIER_MAP[matches[0][1].lower()], int(matches[0][0])
+            return TIER_MAP[spaceless_match], int(matches[0][0])
 
         # Return tier description as-is if not in TIER_MAP
         return matches[0][1], int(matches[0][0])
@@ -111,7 +116,7 @@ def convert_ticket_prices(prices: str) -> dict:
         map of tier descriptions to ticket prices
         for a given event
     """
-    if "free entry" in prices.lower():
+    if "free entry" in prices.lower() or "免費入場" in prices:
         return {"standard": 0}
 
     ticket_prices = dict()
