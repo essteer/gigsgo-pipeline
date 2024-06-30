@@ -93,7 +93,6 @@ def match_ticket_tiers(price_string: str) -> tuple:
             return TIER_MAP[matches[0][1].lower()], int(matches[0][0])
 
         # Return tier description as-is if not in TIER_MAP
-        print(f"Unknown price tier: {matches[0][1]}")
         return matches[0][1], int(matches[0][0])
 
 
