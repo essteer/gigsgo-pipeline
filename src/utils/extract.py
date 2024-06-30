@@ -128,11 +128,11 @@ def get_regex_matches(text: str) -> list[re.Match]:
         (\d{1,2}(:\d{2})?\s*([AaPp]{1}\s?[Mm]{1})?  # Logic as per start time
         |[Ll][Aa][Tt][Ee]))?                 # End time may be "late"
         
-        \s?Bands\s*樂隊:\s?                     # "Bands 樂隊:"
+        \s?Bands\s*樂[隊團]:\s?               # "Bands 樂隊:" | "Bands 樂團"
         (?P<bands>.*?)                       # Bands info, non-greedy
         \s?Ticket\s?(門|⾨)票:\s?              # "Ticket 門票:" or "Ticket ⾨票:" (character variants)
         (?P<tickets>.*?                       # Ticket info, non-greedy
-        (?=([FMSTW][a-z]{2,5}day|Enjoy|$)))  # Lookahead to day, "Enjoy" or end of string
+        (?=([FMSTW][a-z]{2,5}day|Enjoy|Be |$)))  # Lookahead to day, "Enjoy" or end of string
         """,
         re.VERBOSE | re.DOTALL,
     )

@@ -24,7 +24,7 @@ class TestDataPipeline(unittest.TestCase):
                 sum(1 for _ in data_pipeline(test_case, False)), num_matches[test_case]
             )
         # NOTE: this test relies on external source, check source if not found
-        self.assertEqual(sum(1 for _ in data_pipeline(TEST_URL)), 84)
+        self.assertEqual(sum(1 for _ in data_pipeline(TEST_URL)), 91)
 
     def test_matches_are_dicts(self):
         """Test all matches in dict format"""
