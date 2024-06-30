@@ -24,7 +24,7 @@ def main():
 
     if args.verbose:
         for match in formatted_matches:
-            print(match)
+            print(match, "\n")
 
 
 if __name__ == "__main__":
