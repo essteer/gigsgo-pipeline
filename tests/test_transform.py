@@ -8,20 +8,11 @@ from src.utils.transform import (
     convert_to_24_hour_time,
     match_ticket_tiers,
     convert_ticket_prices,
-    split_genres,  # noqa: F401
-    parse_genres,  # noqa: F401
-    parse_band_name,  # noqa: F401
-    parse_all_bands_and_genres,  # noqa: F401
-    format_matches,  # noqa: F401
+    split_genres,
+    parse_genres,
+    parse_band_name,
+    parse_all_bands_and_genres,
 )
-from tests.assets.ex01 import HTML_1
-from tests.assets.ex02 import HTML_2
-from tests.assets.ex03 import HTML_3
-from tests.assets.ex04 import HTML_4
-
-
-TEST_ASSETS = os.path.abspath(os.path.join("tests", "assets"))
-TEST_CASES = [HTML_1, HTML_2, HTML_3, HTML_4]
 
 
 class TestConvertDaysToDigits(unittest.TestCase):
@@ -43,9 +34,10 @@ class TestConvertDaysToDigits(unittest.TestCase):
 class TestConvertTo24HourTime(unittest.TestCase):
     def test_conversions_correct(self):
         """Test function output matches expectation"""
-        # Correct format left unchanged
+        # Correct format should be left unchanged
+        self.assertEqual(convert_to_24_hour_time("07:30"), "07:30")
         self.assertEqual(convert_to_24_hour_time("10:30"), "10:30")
-        # Analogue changed to digital
+        # Analogue converts to digital
         self.assertEqual(convert_to_24_hour_time("10pm"), "22:00")
         self.assertEqual(convert_to_24_hour_time("1:30am"), "01:30")
         self.assertEqual(convert_to_24_hour_time("1:30pm"), "13:30")
@@ -158,6 +150,124 @@ class TestConvertTicketPrices(unittest.TestCase):
         # Non-standard descriptions should be returned as-is
         self.assertEqual(convert_ticket_prices("$777 b0om3r8Ng"), {"b0om3r8Ng": 777})
         self.assertEqual(convert_ticket_prices("$777 (b0om3r8Ng)"), {"b0om3r8Ng": 777})
+
+
+class TestSplitGenres(unittest.TestCase):
+    def test_non_genres_ignored(self):
+        """Test place names aren't included as genres"""
+        # Update maps.py list over time to capture quoted locations
+        self.assertIsNone(split_genres("Japan, 日本"), None)
+        self.assertIsNone(split_genres("Qingdao, China 青島,中國"), None)
+
+    def test_phone_numbers_ignore(self):
+        """Test strings containing HK phone numbers are ignored"""
+        self.assertIsNone(split_genres("Call +852-4444-4444 for more info"), None)
+        self.assertIsNone(split_genres("Call +852 4444 4444 for more info"), None)
+        self.assertIsNone(split_genres("Call 4444-4444 for more info"), None)
+        self.assertIsNone(split_genres("Call44444444for more info"), None)
+
+    def test_genre_output_types_correct(self):
+        """Test valid input processed as correct types"""
+        self.assertIsInstance(split_genres("all musicians welcome to jam"), list)
+        self.assertIsInstance(split_genres("Funk/Rock"), list)
+        self.assertIsInstance(split_genres("hip hop"), list)
+        self.assertIsInstance(split_genres("jazz / pop"), list)
+        self.assertIsInstance(split_genres("pop & R'n'B"), list)
+
+    def test_genre_output_values_correct(self):
+        """Test valid input processed correctly"""
+        self.assertEqual(split_genres("all musicians welcome to jam"), ["jam session"])
+        self.assertEqual(split_genres("Funk/Rock"), ["funk", "rock"])
+        self.assertEqual(split_genres("hip hop"), ["hip-hop"])
+        self.assertEqual(split_genres("jazz / pop"), ["jazz", "pop"])
+        self.assertEqual(split_genres("pop & R'n'B"), ["pop", "r&b"])
+
+
+class TestParseGenres(unittest.TestCase):
+    def test_non_genres_ignored(self):
+        """Test entries specified in NOT_GENRES ignored"""
+        self.assertEqual(parse_genres("Loremipsum (Japan 日本) (rock)"), ["rock"])
+        self.assertEqual(
+            parse_genres(
+                "Lorem ipsum (all musicians welcome to jam) (lorem 3332-5333 ipsum)"
+            ),
+            ["jam session"],
+        )
+
+    def test_missing_genre_returns_unknown(self):
+        """Test unknown returned if no content found"""
+        self.assertEqual(parse_genres(""), ["unknown"])
+        self.assertEqual(parse_genres("  "), ["unknown"])
+        self.assertEqual(parse_genres("()"), ["unknown"])
+
+    def test_genres_sorted_alphabetically(self):
+        """Test results sorted alphabetically"""
+        self.assertEqual(
+            parse_genres("lorem (C, ba, Bb, a, D)"), ["a", "ba", "bb", "c", "d"]
+        )
+
+    def test_genres_not_duplicated(self):
+        """Test duplicates are removed"""
+        self.assertEqual(parse_genres("(rock, funk, Rock)"), ["funk", "rock"])
+
+
+class TestParseBandName(unittest.TestCase):
+    def test_single_name_captured(self):
+        """Test content outside of parenthesis is captured"""
+        self.assertEqual(parse_band_name("lorem (ipsum)"), "lorem")
+        self.assertEqual(parse_band_name("lorem! (ipsum)"), "lorem!")
+        self.assertEqual(
+            parse_band_name("lorem 憤駛撓充據 (ipsum)"), "lorem 憤駛撓充據"
+        )
+        self.assertEqual(parse_band_name("lorem (ipsum) dolor (sit)"), "lorem")
+        self.assertEqual(
+            parse_band_name("lorem IPSUM dolor (sit)"), "lorem IPSUM dolor"
+        )
+
+    def test_absent_names_return_unknown(self):
+        """Test 'unknown' is returned if no names found"""
+        self.assertEqual(parse_band_name(""), "unknown")
+        self.assertEqual(parse_band_name(" "), "unknown")
+
+
+class TestParseAllBandsAndGenres(unittest.TestCase):
+    def test_output_type(self):
+        """Test output is list of dicts"""
+        self.assertIsInstance(
+            parse_all_bands_and_genres("Lorem ipsum (dolor sit)"), list
+        )
+        self.assertIsInstance(
+            parse_all_bands_and_genres(
+                "Lorem ipsum (dolor ) sit (amet, consectetur) adipiscing elit"
+            ),
+            list,
+        )
+        for e in parse_all_bands_and_genres("Lorem ipsum (dolor sit)"):
+            self.assertIsInstance(e, dict)
+        for e in parse_all_bands_and_genres(
+            "Lorem ipsum (dolor ) sit amet, (consectetur) adipiscing elit"
+        ):
+            self.assertIsInstance(e, dict)
+
+    def test_output_values(self):
+        """Test output is as expected"""
+        self.assertEqual(
+            parse_all_bands_and_genres("Lorem ipsum (dolor sit)"),
+            [{"name": "Lorem ipsum", "genre": ["dolor sit"]}],
+        )
+        self.assertEqual(
+            parse_all_bands_and_genres(
+                "Lorem (ipsum), dolor (SIT), AMET (consectetur, adipiscing)"
+            ),
+            [
+                # Case of name remains unchanged
+                {"name": "Lorem", "genre": ["ipsum"]},
+                # Case of genre made lowercase
+                {"name": "dolor", "genre": ["sit"]},
+                # Genre names reordered alphabetically
+                {"name": "AMET", "genre": ["adipiscing", "consectetur"]},
+            ],
+        )
 
 
 if __name__ == "__main__":

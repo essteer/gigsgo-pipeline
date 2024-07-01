@@ -64,6 +64,33 @@ class TestDataPipeline(unittest.TestCase):
             self.assertIn("bands", match)
             self.assertIn("tickets", match)
 
+    def test_match_content_types_correct(self):
+        """Test values in each match dict are of expected types"""
+        for test_case in TEST_CASES:
+            matches = data_pipeline(test_case, False)
+            for match in matches:
+                self.assertIsInstance(match["weekday"], int)
+                self.assertIsInstance(match["month"], int)
+                self.assertIsInstance(match["date"], int)
+                self.assertIsInstance(match["desc"], str)
+                self.assertIsInstance(match["venue"], str)
+                self.assertIsInstance(match["open"], str)
+                self.assertIsInstance(match["close"], str)
+                self.assertIsInstance(match["bands"], list)
+                self.assertIsInstance(match["tickets"], dict)
+        # NOTE: this test relies on external source, check source if not found
+        matches = data_pipeline(TEST_URL)
+        for match in matches:
+            self.assertIsInstance(match["weekday"], int)
+            self.assertIsInstance(match["month"], int)
+            self.assertIsInstance(match["date"], int)
+            self.assertIsInstance(match["desc"], str)
+            self.assertIsInstance(match["venue"], str)
+            self.assertIsInstance(match["open"], str)
+            self.assertIsInstance(match["close"], str)
+            self.assertIsInstance(match["bands"], list)
+            self.assertIsInstance(match["tickets"], dict)
+
 
 if __name__ == "__main__":
     unittest.main()
