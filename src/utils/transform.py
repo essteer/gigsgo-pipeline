@@ -3,7 +3,7 @@ import re
 import sys
 
 sys.path.append(os.path.join(os.path.dirname(__file__)))
-from maps import DAY_MAP, GENRE_MAP, LOCATION_LIST, TIER_MAP
+from maps import DAY_MAP, GENRE_MAP, NOT_GENRES, TIER_MAP
 
 
 def convert_days_to_digits(day_string) -> int:
@@ -143,23 +143,36 @@ def split_genres(genres: str) -> list[str]:
     list[str]
         genres separated into list elements
     """
-    if any(loc in genres for loc in LOCATION_LIST):
+    # Ignore place names and band names
+    if any(loc in genres.lower() for loc in NOT_GENRES):
+        return None
+    # Ignore strings with phone numbers
+    if re.match(r".*([\d]{4}[-\s]?[\d]{4}).*", genres):
         return None
 
+    # Split genres by commas and slashes
     parts = re.split(r"[,/]", genres)
 
     genre_list = list()
     for part in parts:
+        # Add to list but split
         genre_list.extend(part.split(" & "))
 
+    # Strip whitespace and make all entries lowercase
     genre_list = [genre.lower().strip() for genre in genre_list]
 
-    return [GENRE_MAP[genre] if genre in GENRE_MAP else genre for genre in genre_list]
+    return [
+        # Remove inner whitespace and hypens to compare with GENRE_MAP
+        GENRE_MAP[genre.replace(" ", "").replace("-", "")]
+        if genre.replace(" ", "").replace("-", "") in GENRE_MAP
+        else genre
+        for genre in genre_list
+    ]
 
 
 def parse_genres(genre_string: str) -> list[str]:
     """
-    Applies regex to find genre info a string
+    Applies regex to find genre info in a string
 
     Parameters
     ----------
@@ -206,7 +219,7 @@ def parse_band_name(band_string: str) -> str:
     # Grab text until a "(" sign
     pattern = re.compile(r"([^\(]+)\s*\(?")
     # Get band name
-    match = pattern.search(band_string)
+    match = pattern.search(band_string.strip())
     if match:
         band = match.group(1).strip()
         return band

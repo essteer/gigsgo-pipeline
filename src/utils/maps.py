@@ -27,6 +27,28 @@ TIER_MAP = {
     "walkin即場": "door",
 }
 
-GENRE_MAP = {"r'n'b": "r&b", "rnb": "r&b", "r&b": "r&b"}
+GENRE_MAP = {
+    "allmusicianswelcometojam": "jam session",
+    "contemporaryjazz": "jazz",
+    "contemporarypop": "pop",
+    "easylisteningjazz": "jazz",
+    "folk&rock": "folk rock",
+    "hiphop": "hip-hop",
+    "partypop": "pop",
+    "r'n'b": "r&b",
+    "rnb": "r&b",
+    "r&b": "r&b",
+    "summerpop": "pop",
+}
 
-LOCATION_LIST = ["Japan", "日本", "China", "中國"]
+NOT_GENRES = [
+    "japan",
+    "日本",
+    "china",
+    "中國",
+    "re'call",
+    "羊文學",
+    "行動派",
+    "張蔓姿",
+    "lagchun",
+]
