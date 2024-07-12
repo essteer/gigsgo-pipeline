@@ -9,6 +9,9 @@ from app import data_pipeline
 def main():
     """
     Runs the data pipeline with a user-provided URL
+
+    Terminal command:
+    $ python3 -m src.main [-v] 'https://www.example.com'
     """
     parser = argparse.ArgumentParser(description="Run data pipeline with target URL")
     parser.add_argument(
