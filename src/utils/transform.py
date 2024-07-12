@@ -33,7 +33,7 @@ def convert_to_24_hour_time(time_str: str) -> str:
     if time_str is None:
         return "??:??"
 
-    match = re.match(r"(\d{1,2}):?(\d{2})?\s*(a\s?m|p\s?m)", time_str.lower())
+    match = re.match(r"(\d{1,2}):?(\d{2})?\s*(a\s?m|p\s?m|m)", time_str.lower())
 
     if not match:  # "late" rarely appears so don't check by default
         if time_str.lower() == "late":
@@ -44,7 +44,11 @@ def convert_to_24_hour_time(time_str: str) -> str:
     hour, minute, period = match.groups()
     hour = int(hour)
 
-    if ("pm" in period or "p m" in period) and hour != 12:
+    if (
+        "pm" in period
+        or "p m" in period
+        or "m" == period  # default to pm if first letter absent
+    ) and hour != 12:
         hour += 12
     elif ("am" in period or "a m" in period) and hour == 12:
         hour = 0
