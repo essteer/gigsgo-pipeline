@@ -3,7 +3,7 @@ import os
 import sys
 
 sys.path.append(os.path.join(os.path.dirname(__file__)))
-from app import data_pipeline
+from utils.pipeline import data_pipeline
 
 
 def main():
