@@ -3,7 +3,7 @@ import sys
 import unittest
 
 sys.path.append(os.path.join(os.path.dirname(__file__)))
-from src.app import data_pipeline
+from src.utils.pipeline import data_pipeline
 from tests.assets.ex01 import HTML_1
 from tests.assets.ex02 import HTML_2
 from tests.assets.ex03 import HTML_3

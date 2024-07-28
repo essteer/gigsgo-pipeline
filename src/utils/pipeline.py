@@ -2,14 +2,14 @@ import os
 import sys
 
 sys.path.append(os.path.join(os.path.dirname(__file__)))
-from utils.extract import (
+from extract import (
     get_html,
     parse_html,
     preprocess_text,
     decode_quoted_printable_text,
     get_regex_matches,
 )
-from utils.transform import format_matches
+from transform import format_matches
 
 
 def data_pipeline(target: str, url: bool = True):
