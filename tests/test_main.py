@@ -1,9 +1,14 @@
+import os
 import unittest
 from unittest.mock import patch
 import argparse
 from src.main import main, JSON_SAVE_DIR
 
 class TestMain(unittest.TestCase):
+    
+    def setUp(self):
+        # Ensure the assets dir exists before each test
+        os.makedirs(JSON_SAVE_DIR, exist_ok=True)
 
     @patch("src.main.data_pipeline")
     @patch("argparse.ArgumentParser.parse_args")
@@ -15,12 +20,10 @@ class TestMain(unittest.TestCase):
             save=False
         )
         mock_data_pipeline.return_value = ["match1", "match2"]
-
         with patch("builtins.print") as mock_print:
             main()
             mock_print.assert_any_call("match1", "\n")
             mock_print.assert_any_call("match2", "\n")
-
 
     @patch("src.main.data_pipeline")
     @patch("argparse.ArgumentParser.parse_args")
@@ -32,7 +35,6 @@ class TestMain(unittest.TestCase):
             save=True
         )
         mock_data_pipeline.return_value = ["match1", "match2"]
-
         with patch("json.dump") as mock_json_dump, patch("os.makedirs") as mock_makedirs:
             main()
             mock_makedirs.assert_called_with(JSON_SAVE_DIR, exist_ok=True)
@@ -41,7 +43,6 @@ class TestMain(unittest.TestCase):
             self.assertEqual(args[0], ["match1", "match2"])
             # ensure_ascii=False required to save Chinese characters in human-readable format
             self.assertTrue("ensure_ascii" in kwargs and not kwargs["ensure_ascii"])
-
 
     @patch("src.main.data_pipeline")
     @patch("argparse.ArgumentParser.parse_args")
@@ -53,7 +54,6 @@ class TestMain(unittest.TestCase):
             save=True
         )
         mock_data_pipeline.return_value = ["match1", "match2"]
-
         with patch("builtins.print") as mock_print, patch("json.dump") as mock_json_dump, patch("os.makedirs") as mock_makedirs:
             main()
             mock_print.assert_any_call("match1", "\n")
