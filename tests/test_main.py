@@ -39,7 +39,8 @@ class TestMain(unittest.TestCase):
             mock_json_dump.assert_called_once()
             args, kwargs = mock_json_dump.call_args
             self.assertEqual(args[0], ["match1", "match2"])
-            self.assertTrue("ensure_ascii" in kwargs and kwargs["ensure_ascii"] == False)
+            # ensure_ascii=False required to save Chinese characters in human-readable format
+            self.assertTrue("ensure_ascii" in kwargs and not kwargs["ensure_ascii"])
 
 
     @patch("src.main.data_pipeline")
