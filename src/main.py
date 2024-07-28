@@ -2,11 +2,12 @@ import argparse
 import json
 import os
 import sys
+from datetime import datetime
 
 sys.path.append(os.path.join(os.path.dirname(__file__)))
 from utils.pipeline import data_pipeline
 
-JSON_SAVE_DIR = os.path.join(os.getcwd(), "data")
+JSON_SAVE_DIR = os.path.join(os.getcwd(), "assets")
 
 
 def main():
@@ -36,7 +37,11 @@ def main():
             print(match, "\n")
 
     if args.save:
-        with open(os.path.join(JSON_SAVE_DIR, "data.json"), "w") as f:
+        os.makedirs(JSON_SAVE_DIR, exist_ok=True)
+        timestamp = datetime.now().strftime("%y%m%d%H%M%S")
+        filename = f"{timestamp}_data.json"
+        filepath = os.path.join(JSON_SAVE_DIR, filename)
+        with open(filepath, "w") as f:
             # set ensure_ascii=False to preserve Chinese characters in human-readable form
             json.dump(formatted_matches, f, ensure_ascii=False, indent=4)
 

@@ -2,1935 +2,9 @@
     {
         "weekday": 4,
         "month": 7,
-        "date": 11,
-        "desc": "Live Music",
-        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai \u7063\u4ed4\u8b1d\u6590\u905390\u865f\u8c6b\u6e2f\u5927\u5ec81\u6a13",
-        "open": "18:00",
-        "close": "00:00",
-        "bands": [
-            {
-                "name": "John",
-                "genre": [
-                    "acoustic"
-                ]
-            },
-            {
-                "name": "Mojo",
-                "genre": [
-                    "rock"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 4,
-        "month": 7,
-        "date": 11,
-        "desc": "Live Music @ The Iron Fairies",
-        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central \u4e2d\u74b0\u8377\u674e\u6d3b\u90531-13\u865f",
-        "open": "22:00",
-        "close": "01:00",
-        "bands": [
-            {
-                "name": "The Flow Band with Wendy Robin",
-                "genre": [
-                    "pop",
-                    "r&b"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 4,
-        "month": 7,
-        "date": 11,
-        "desc": "Live Music",
-        "venue": "The Stage, 2/F, the Heritage Woo Cheong Pawn Shop, 60A-66 Johnston Rd., Wan Chai, \u7063\u4ed4\u838a\u58eb\u6566\u905362\u865f 2\u6a13",
-        "open": "21:00",
-        "close": "00:00",
-        "bands": [
-            {
-                "name": "Ofentse",
-                "genre": [
-                    "pop"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 4,
-        "month": 7,
-        "date": 11,
-        "desc": "Jazz Jam & Open Mic",
-        "venue": "Cheek to Cheek Soho, 17 Old Bailey St, Central\u4e2d\u74b0\u5967\u5351\u5229\u885717\u865f",
-        "open": "19:00",
-        "close": "00:00",
-        "bands": [
-            {
-                "name": "Jazz Jam Nite",
-                "genre": [
-                    "jam session"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 4,
-        "month": 7,
-        "date": 11,
-        "desc": "Live Music",
-        "venue": "ELLA, 26/F, The Trilogy, H Code, 45 Pottinger St., Central \u4e2d\u74b0\u7835\u7538\u4e4d\u885745\u865fH Code 26\u6a13",
-        "open": "20:30",
-        "close": "00:00",
-        "bands": [
-            {
-                "name": "Dimple Cruz",
-                "genre": [
-                    "jazz"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 300
-        }
-    },
-    {
-        "weekday": 5,
-        "month": 7,
-        "date": 12,
-        "desc": "Live Music",
-        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai \u7063\u4ed4\u8b1d\u6590\u905390\u865f\u8c6b\u6e2f\u5927\u5ec81\u6a13",
-        "open": "18:00",
-        "close": "01:00",
-        "bands": [
-            {
-                "name": "MaryJane",
-                "genre": [
-                    "acoustic"
-                ]
-            },
-            {
-                "name": "Loose Agenda",
-                "genre": [
-                    "rock"
-                ]
-            },
-            {
-                "name": "Road To Ruin",
-                "genre": [
-                    "rock"
-                ]
-            },
-            {
-                "name": "Re'Call",
-                "genre": [
-                    "rock"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 5,
-        "month": 7,
-        "date": 12,
-        "desc": "Summer Night Lounge",
-        "venue": "The Southside, LG Atrium, 11 Heung Yip Rd., Wong Chuk Hang \u9ec3\u7af9\u5751\u9999\u8449\u905311\u865fLG\u4e2d\u5ead",
-        "open": "19:30",
-        "close": "20:30",
-        "bands": [
-            {
-                "name": "Snoopy \u8a79\u4ed5\u5049 \u53e4\u6dd6\u6587 \u5433\u6797\u5cf0 \u8eca\u5a49\u5a49",
-                "genre": [
-                    "pop"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 5,
-        "month": 7,
-        "date": 12,
-        "desc": "Live Music @ The Iron Fairies",
-        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central \u4e2d\u74b0\u8377\u674e\u6d3b\u90531-13\u865f",
-        "open": "22:00",
-        "close": "02:00",
-        "bands": [
-            {
-                "name": "The Flow Band with Wendy Robin",
-                "genre": [
-                    "pop",
-                    "r&b"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 5,
-        "month": 7,
-        "date": 12,
-        "desc": "Live Music",
-        "venue": "The Stage, 2/F, the Heritage Woo Cheong Pawn Shop, 60A-66 Johnston Rd., Wan Chai, \u7063\u4ed4\u838a\u58eb\u6566\u905362\u865f 2\u6a13",
-        "open": "21:00",
-        "close": "00:00",
-        "bands": [
-            {
-                "name": "Kel & Fidela Trio",
-                "genre": [
-                    "pop",
-                    "soul"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 5,
-        "month": 7,
-        "date": 12,
-        "desc": "Live music",
-        "venue": "Maggie Choo's, G/F Chinachem Hollywood Centre, Central, \u4e2d\u74b0\u83ef\u61cb\u8377\u674e\u6d3b\u4e2d\u5fc3",
-        "open": "20:00",
-        "close": "10:00",
-        "bands": [
-            {
-                "name": "Tumbao Quartet",
-                "genre": [
-                    "latin jazz"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 5,
-        "month": 7,
-        "date": 12,
-        "desc": "Live music",
-        "venue": "Basement, On Lok House.39-43 Hollywood Rd., Central \u4e2d\u74b0\u8377\u674e\u6d3b\u905339-43\u865f\u5b89\u6a02\u6a13\u5730\u5eab",
-        "open": "22:00",
-        "close": "23:30",
-        "bands": [
-            {
-                "name": "What's the world",
-                "genre": [
-                    "hip-hop",
-                    "trap"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 200
-        }
-    },
-    {
-        "weekday": 5,
-        "month": 7,
-        "date": 12,
-        "desc": "Live Jazz Music @Jim Hall",
-        "venue": "Fountain de Chopin , 6/F, Block B, Kai Tak Factory Bldg. Stage 1, 22 Sam Chuk St., Sun Po Kong \u65b0\u84b2\u5d17\u4e09\u795d\u885722\u865f\u555f\u5fb7\u5de5\u696d\u5927\u5ec8\u7b2c\u4e00\u671fB\u5ea7\u516d\u6a13\u7ffb\u9a30\u4e09\u5468\u534a",
-        "open": "20:00",
-        "close": "22:30",
-        "bands": [
-            {
-                "name": "Micheal Chan Trio",
-                "genre": [
-                    "jazz"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 250,
-            "student": 100
-        }
-    },
-    {
-        "weekday": 5,
-        "month": 7,
-        "date": 12,
-        "desc": "Live Music",
-        "venue": "P Lounge By Plaisance, G/F, No 1 Duddell St. Central. \u4e2d\u74b0\u90fd\u7239\u5229\u88571\u865f\u5730\u8216",
-        "open": "18:00",
-        "close": "00:30",
-        "bands": [
-            {
-                "name": "Athena",
-                "genre": [
-                    "pop"
-                ]
-            },
-            {
-                "name": "Kyra & Kurt",
-                "genre": [
-                    "pop"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 5,
-        "month": 7,
-        "date": 12,
-        "desc": "Live Music",
-        "venue": "Lau Bak Freespace Livehouse G/F, Freespace, West Kowloon Cultural District, No. 18 Museum Drive, Tsim Sha Tsui \u897f\u4e5d\u6587\u5316\u5340, \u5c16\u6c99\u5480",
-        "open": "20:15",
-        "close": "22:45",
-        "bands": [
-            {
-                "name": "\u6771\u4eac\u4e2d\u592e\u7dda Tokyo Chuo Line",
-                "genre": [
-                    "jazz"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 250
-        }
-    },
-    {
-        "weekday": 6,
-        "month": 7,
-        "date": 13,
-        "desc": "Summer Beat Fest 2024 \u4e0d\u7720\u843d\u574a\u590f\u65e5\u55f6\u97f3\u6a02\u7bc0",
-        "venue": "LKF Amphitheatre Summer Beats Stage \u862d\u6842\u574a\u9732\u5929\u5287\u5834-\u590f\u65e5\u55f6\u821e\u81fa",
-        "open": "14:00",
-        "close": "22:30",
-        "bands": [
-            {
-                "name": "Black Kobra",
-                "genre": [
-                    "classic rock"
-                ]
-            },
-            {
-                "name": "Kamie",
-                "genre": [
-                    "acoustic pop"
-                ]
-            },
-            {
-                "name": "After Tales",
-                "genre": [
-                    "indie pop rock"
-                ]
-            },
-            {
-                "name": "The Hertz",
-                "genre": [
-                    "indie pop"
-                ]
-            },
-            {
-                "name": "Papa Jack Band",
-                "genre": [
-                    "funk",
-                    "rock"
-                ]
-            },
-            {
-                "name": "Magic Mountain Bells",
-                "genre": [
-                    "modern rock"
-                ]
-            },
-            {
-                "name": "Funkee Tung",
-                "genre": [
-                    "funk"
-                ]
-            },
-            {
-                "name": "Fiester",
-                "genre": [
-                    "rock"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 6,
-        "month": 7,
-        "date": 13,
-        "desc": "H2 Grass Roots Weekender Day1",
-        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai \u7063\u4ed4\u8b1d\u6590\u905390\u865f\u8c6b\u6e2f\u5927\u5ec81\u6a13",
-        "open": "16:15",
-        "close": "01:30",
-        "bands": [
-            {
-                "name": "Lanaly",
-                "genre": [
-                    "rock"
-                ]
-            },
-            {
-                "name": "Paper Girl",
-                "genre": [
-                    "pop"
-                ]
-            },
-            {
-                "name": "Stone Dragons",
-                "genre": [
-                    "electronic rock"
-                ]
-            },
-            {
-                "name": "Turbulent",
-                "genre": [
-                    "rock"
-                ]
-            },
-            {
-                "name": "Off Schedule",
-                "genre": [
-                    "rock"
-                ]
-            },
-            {
-                "name": "Relic ft. Paco",
-                "genre": [
-                    "rock"
-                ]
-            },
-            {
-                "name": "Jorjor Wel",
-                "genre": [
-                    "jazz",
-                    "rock"
-                ]
-            },
-            {
-                "name": "Day's End Quartet",
-                "genre": [
-                    "rock"
-                ]
-            },
-            {
-                "name": "Hibye",
-                "genre": [
-                    "emo rock"
-                ]
-            },
-            {
-                "name": "The Pro Nouns",
-                "genre": [
-                    "rock"
-                ]
-            },
-            {
-                "name": "Karmageddon",
-                "genre": [
-                    "rock"
-                ]
-            },
-            {
-                "name": "The Octopus",
-                "genre": [
-                    "heavy"
-                ]
-            },
-            {
-                "name": "El Kapitan & The Privates",
-                "genre": [
-                    "rock"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 6,
-        "month": 7,
-        "date": 13,
-        "desc": "Live Music @ The Iron Fairies",
-        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central \u4e2d\u74b0\u8377\u674e\u6d3b\u90531-13\u865f",
-        "open": "22:00",
-        "close": "02:00",
-        "bands": [
-            {
-                "name": "The Flow Band with Athena",
-                "genre": [
-                    "rock"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 6,
-        "month": 7,
-        "date": 13,
-        "desc": "The Summer Music 2024 \u4ef2\u590f\u97f3\u6a02\u7bc0",
-        "venue": "Fringe Dairy, Fringe Club, 2 Lower Albert Rd, Central. \u4e2d\u74b0\u4e0b\u4e9e\u5398\u7562\u9053\u4e8c\u865f\u85dd\u7a57\u6703\u8cfd\u5976\u5eab",
-        "open": "20:00",
-        "close": "23:00",
-        "bands": [
-            {
-                "name": "Johnson Ho",
-                "genre": [
-                    "jazz"
-                ]
-            },
-            {
-                "name": "Avery",
-                "genre": [
-                    "pop"
-                ]
-            },
-            {
-                "name": "Charles",
-                "genre": [
-                    "bass"
-                ]
-            },
-            {
-                "name": "Sylvia",
-                "genre": [
-                    "jazz"
-                ]
-            },
-            {
-                "name": "Karen",
-                "genre": [
-                    "pop"
-                ]
-            },
-            {
-                "name": "Claudia Koh",
-                "genre": [
-                    "pop"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 480
-        }
-    },
-    {
-        "weekday": 6,
-        "month": 7,
-        "date": 13,
-        "desc": "Live Music",
-        "venue": "Lau Bak Freespace Livehouse G/F, Freespace, West Kowloon Cultural District, No. 18 Museum Drive, Tsim Sha Tsui \u897f\u4e5d\u6587\u5316\u5340, \u5c16\u6c99\u5480",
-        "open": "20:15",
-        "close": "22:45",
-        "bands": [
-            {
-                "name": "\u7396\u62fe\u5f8cPost90s",
-                "genre": [
-                    "post rock"
-                ]
-            },
-            {
-                "name": "Milos",
-                "genre": [
-                    "pop"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 250
-        }
-    },
-    {
-        "weekday": 6,
-        "month": 7,
-        "date": 13,
-        "desc": "Live Music",
-        "venue": "The Aftermath 57-59 Wyndham St. L/G Central \u4e2d\u74b0\u96f2\u54b8\u885757-59\u865f\u4f4e\u5c64\u5730\u4e0b",
-        "open": "21:15",
-        "close": "22:15",
-        "bands": [
-            {
-                "name": "The Earth Sojourners",
-                "genre": [
-                    "dream pop"
-                ]
-            },
-            {
-                "name": "Sham Pain Buddha",
-                "genre": [
-                    "blues rock"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 6,
-        "month": 7,
-        "date": 13,
-        "desc": "Live Music",
-        "venue": "The Sanctum, 3/F, Stanley 11, 11 Stanley St., Central \u4e2d\u74b0\u58eb\u4e39\u5229\u885711\u865fStanley 11 3\u6a13",
-        "open": "21:00",
-        "close": "00:00",
-        "bands": [
-            {
-                "name": "Kara",
-                "genre": [
-                    "jazz"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 6,
-        "month": 7,
-        "date": 13,
-        "desc": "Live Music",
-        "venue": "Kind of Brew, G/F, 112 First St., Sai Ying Pun. \u897f\u71df\u76e4\u7b2c\u4e00\u8857112\u865f\u5730\u4e0b",
-        "open": "20:00",
-        "close": "22:00",
-        "bands": [
-            {
-                "name": "Eugene Pao X Teriver Cheung",
-                "genre": [
-                    "jazz"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 400
-        }
-    },
-    {
-        "weekday": 6,
-        "month": 7,
-        "date": 13,
-        "desc": "Live Music",
-        "venue": "Ohm\u2026cafe and bar 152, Yu Chau St. Shum Shui Po. \u6df1\u6c34\u57d7\u6c5d\u5dde\u8857152\u865f",
-        "open": "20:30",
-        "close": "22:00",
-        "bands": [
-            {
-                "name": "CY",
-                "genre": [
-                    "pop"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 150
-        }
-    },
-    {
-        "weekday": 7,
-        "month": 7,
-        "date": 14,
-        "desc": "Summer Beat Fest 2024 \u4e0d\u7720\u843d\u574a\u590f\u65e5\u55f6\u97f3\u6a02\u7bc0",
-        "venue": "LKF Amphitheatre Summer Beats Stage \u862d\u6842\u574a\u9732\u5929\u5287\u5834-\u590f\u65e5\u55f6\u821e\u81fa",
-        "open": "14:00",
-        "close": "22:20",
-        "bands": [
-            {
-                "name": "Mango Jam",
-                "genre": [
-                    "canto pop"
-                ]
-            },
-            {
-                "name": "Covers Of Covers",
-                "genre": [
-                    "funk"
-                ]
-            },
-            {
-                "name": "Nvde",
-                "genre": [
-                    "pop"
-                ]
-            },
-            {
-                "name": "General Lino & The Captains",
-                "genre": [
-                    "reggae"
-                ]
-            },
-            {
-                "name": "Britsix",
-                "genre": [
-                    "beatles tribute band"
-                ]
-            },
-            {
-                "name": "Turbulent",
-                "genre": [
-                    "canto rock"
-                ]
-            },
-            {
-                "name": "Murphy & The Lawyers",
-                "genre": [
-                    "dancehall"
-                ]
-            },
-            {
-                "name": "The Heartbreakers",
-                "genre": [
-                    "classic rock"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 7,
-        "month": 7,
-        "date": 14,
-        "desc": "H2 Grass Roots Weekender Day2",
-        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai \u7063\u4ed4\u8b1d\u6590\u905390\u865f\u8c6b\u6e2f\u5927\u5ec81\u6a13",
-        "open": "16:15",
-        "close": "00:30",
-        "bands": [
-            {
-                "name": "Rockmentals Nepal",
-                "genre": [
-                    "rock"
-                ]
-            },
-            {
-                "name": "Giorgio Manzoni",
-                "genre": [
-                    "pop"
-                ]
-            },
-            {
-                "name": "Brain Burn Band",
-                "genre": [
-                    "rock"
-                ]
-            },
-            {
-                "name": "Feel The Noise",
-                "genre": [
-                    "pop",
-                    "rock"
-                ]
-            },
-            {
-                "name": "Midnight Wander",
-                "genre": [
-                    "rock"
-                ]
-            },
-            {
-                "name": "Vortex",
-                "genre": [
-                    "vortex"
-                ]
-            },
-            {
-                "name": "Bad Actors",
-                "genre": [
-                    "rock"
-                ]
-            },
-            {
-                "name": "Poltergeist",
-                "genre": [
-                    "indie pop"
-                ]
-            },
-            {
-                "name": "The Intervals",
-                "genre": [
-                    "melodic rock"
-                ]
-            },
-            {
-                "name": "Happy Lamb Band",
-                "genre": [
-                    "punk rock"
-                ]
-            },
-            {
-                "name": "Scars Of Time",
-                "genre": [
-                    "heavy"
-                ]
-            },
-            {
-                "name": "Bebe's Wish",
-                "genre": [
-                    "rock"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 7,
-        "month": 7,
-        "date": 14,
-        "desc": "Live Music",
-        "venue": "Ohm\u2026cafe and bar 152, Yu Chau St. Shum Shui Po. \u6df1\u6c34\u57d7\u6c5d\u5dde\u8857152\u865f",
-        "open": "20:30",
-        "close": "22:00",
-        "bands": [
-            {
-                "name": "Choco & Mitchell",
-                "genre": [
-                    "hip-hop",
-                    "pop"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 150
-        }
-    },
-    {
-        "weekday": 7,
-        "month": 7,
-        "date": 14,
-        "desc": "Live Music @ The Iron Fairies",
-        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central \u4e2d\u74b0\u8377\u674e\u6d3b\u90531-13\u865f",
-        "open": "21:30",
-        "close": "00:30",
-        "bands": [
-            {
-                "name": "Reggae Night",
-                "genre": [
-                    "with wendy robin"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 1,
-        "month": 7,
-        "date": 15,
-        "desc": "Jam Night",
-        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai \u7063\u4ed4\u8b1d\u6590\u905390\u865f\u8c6b\u6e2f\u5927\u5ec81\u6a13",
-        "open": "18:00",
-        "close": "00:00",
-        "bands": [
-            {
-                "name": "Steve",
-                "genre": [
-                    "acoustic"
-                ]
-            },
-            {
-                "name": "Mark & John",
-                "genre": [
-                    "jam session"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 1,
-        "month": 7,
-        "date": 15,
-        "desc": "Live Music",
-        "venue": "Champagne Bar, Lobby, Grand Hyatt Hong Kong 1 Harbour Rd, Wanchai. \u9999\u6ab3\u5427,\u9999\u6e2f\u541b\u6085\u9152\u5e97,\u7063\u4ed4\u6e2f\u7063\u90531\u865f",
-        "open": "20:45",
-        "close": "23:45",
-        "bands": [
-            {
-                "name": "Jennifer Palor",
-                "genre": [
-                    "jazz"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 1,
-        "month": 7,
-        "date": 15,
-        "desc": "Live Music @ The Iron Fairies",
-        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central \u4e2d\u74b0\u8377\u674e\u6d3b\u90531-13\u865f",
-        "open": "21:30",
-        "close": "00:30",
-        "bands": [
-            {
-                "name": "Jazz Night",
-                "genre": [
-                    "unknown"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 2,
-        "month": 7,
-        "date": 16,
-        "desc": "Live Music",
-        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai \u7063\u4ed4\u8b1d\u6590\u905390\u865f\u8c6b\u6e2f\u5927\u5ec81\u6a13",
-        "open": "18:00",
-        "close": "00:00",
-        "bands": [
-            {
-                "name": "John",
-                "genre": [
-                    "acoustic"
-                ]
-            },
-            {
-                "name": "Mario & The Basic Notes",
-                "genre": [
-                    "funk",
-                    "rock"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 2,
-        "month": 7,
-        "date": 16,
-        "desc": "Live Music",
-        "venue": "Champagne Bar, Lobby, Grand Hyatt Hong Kong 1 Harbour Rd, Wanchai. \u9999\u6ab3\u5427,\u9999\u6e2f\u541b\u6085\u9152\u5e97,\u7063\u4ed4\u6e2f\u7063\u90531\u865f",
-        "open": "20:45",
-        "close": "23:45",
-        "bands": [
-            {
-                "name": "Jennifer Palor",
-                "genre": [
-                    "jazz"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 2,
-        "month": 7,
-        "date": 16,
-        "desc": "Live Music @ The Iron Fairies",
-        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central \u4e2d\u74b0\u8377\u674e\u6d3b\u90531-13\u865f",
-        "open": "22:00",
-        "close": "01:00",
-        "bands": [
-            {
-                "name": "Rubicube",
-                "genre": [
-                    "pop rock"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 3,
-        "month": 7,
-        "date": 17,
-        "desc": "Live Music",
-        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai \u7063\u4ed4\u8b1d\u6590\u905390\u865f\u8c6b\u6e2f\u5927\u5ec81\u6a13",
-        "open": "18:00",
-        "close": "00:00",
-        "bands": [
-            {
-                "name": "Eduin",
-                "genre": [
-                    "acoustic"
-                ]
-            },
-            {
-                "name": "Elodie Lee Quartet",
-                "genre": [
-                    "jazz"
-                ]
-            },
-            {
-                "name": "Gonzales Musika",
-                "genre": [
-                    "rock"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 3,
-        "month": 7,
-        "date": 17,
-        "desc": "Live Music",
-        "venue": "Champagne Bar, Lobby, Grand Hyatt Hong Kong 1 Harbour Rd, Wanchai. \u9999\u6ab3\u5427,\u9999\u6e2f\u541b\u6085\u9152\u5e97,\u7063\u4ed4\u6e2f\u7063\u90531\u865f",
-        "open": "20:45",
-        "close": "23:45",
-        "bands": [
-            {
-                "name": "Jennifer Palor",
-                "genre": [
-                    "jazz"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 3,
-        "month": 7,
-        "date": 17,
-        "desc": "Live Music",
-        "venue": "ELLA, 26/F, The Trilogy, H Code, 45 Pottinger St., Central \u4e2d\u74b0\u7835\u7538\u4e4d\u885745\u865fH Code 26\u6a13",
-        "open": "20:30",
-        "close": "00:00",
-        "bands": [
-            {
-                "name": "Monina",
-                "genre": [
-                    "jazz"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 300
-        }
-    },
-    {
-        "weekday": 3,
-        "month": 7,
-        "date": 17,
-        "desc": "Live Music",
-        "venue": "The Sanctum, 3/F, Stanley 11, 11 Stanley St., Central \u4e2d\u74b0\u58eb\u4e39\u5229\u885711\u865fStanley 11 3\u6a13",
-        "open": "21:00",
-        "close": "00:00",
-        "bands": [
-            {
-                "name": "Billy Alexander & Janaia Farrell",
-                "genre": [
-                    "jazz"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 3,
-        "month": 7,
-        "date": 17,
-        "desc": "Live Music @ The Iron Fairies",
-        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central \u4e2d\u74b0\u8377\u674e\u6d3b\u90531-13\u865f",
-        "open": "22:00",
-        "close": "01:00",
-        "bands": [
-            {
-                "name": "A.R.T.",
-                "genre": [
-                    "pop"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 3,
-        "month": 7,
-        "date": 17,
-        "desc": "Live Music",
-        "venue": "PizzaExpress, Shop G31-33, 49-51 Empire Centre, 68 Mody Rd, Tsim Sha Tsui \u5c16\u6c99\u5480\u9ebc\u5730\u905368\u865f\u5e1d\u570b\u4e2d\u5fc3\u5730\u4e0bG31-33\u53caG49-51\u865f\u8216",
-        "open": "20:00",
-        "close": "22:00",
-        "bands": [
-            {
-                "name": "Step Out Studios",
-                "genre": [
-                    "pop"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 50
-        }
-    },
-    {
-        "weekday": 4,
-        "month": 7,
-        "date": 18,
-        "desc": "Live Music",
-        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai \u7063\u4ed4\u8b1d\u6590\u905390\u865f\u8c6b\u6e2f\u5927\u5ec81\u6a13",
-        "open": "18:00",
-        "close": "00:00",
-        "bands": [
-            {
-                "name": "John",
-                "genre": [
-                    "acoustic"
-                ]
-            },
-            {
-                "name": "12.8",
-                "genre": [
-                    "rock"
-                ]
-            },
-            {
-                "name": "HZ",
-                "genre": [
-                    "rock"
-                ]
-            },
-            {
-                "name": "Forever Never Ends",
-                "genre": [
-                    "indie rock",
-                    "rock"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 4,
-        "month": 7,
-        "date": 18,
-        "desc": "Jazz Jam & Open Mic",
-        "venue": "Cheek to Cheek Soho, 17 Old Bailey St, Central\u4e2d\u74b0\u5967\u5351\u5229\u885717\u865f",
-        "open": "19:00",
-        "close": "00:00",
-        "bands": [
-            {
-                "name": "Jazz Jam Night",
-                "genre": [
-                    "jam session"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 4,
-        "month": 7,
-        "date": 18,
-        "desc": "Live Music",
-        "venue": "Champagne Bar, Lobby, Grand Hyatt Hong Kong 1 Harbour Rd, Wanchai. \u9999\u6ab3\u5427,\u9999\u6e2f\u541b\u6085\u9152\u5e97,\u7063\u4ed4\u6e2f\u7063\u90531\u865f",
-        "open": "20:45",
-        "close": "23:45",
-        "bands": [
-            {
-                "name": "Jennifer Palor",
-                "genre": [
-                    "jazz"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 4,
-        "month": 7,
-        "date": 18,
-        "desc": "Live Music",
-        "venue": "ELLA, 26/F, The Trilogy, H Code, 45 Pottinger St., Central \u4e2d\u74b0\u7835\u7538\u4e4d\u885745\u865fH Code 26\u6a13",
-        "open": "20:30",
-        "close": "00:00",
-        "bands": [
-            {
-                "name": "Dimple Cruz",
-                "genre": [
-                    "jazz"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 300
-        }
-    },
-    {
-        "weekday": 4,
-        "month": 7,
-        "date": 18,
-        "desc": "Live Music",
-        "venue": "The Aftermath 57-59 Wyndham St. L/G Central \u4e2d\u74b0\u96f2\u54b8\u885757-59\u865f\u4f4e\u5c64\u5730\u4e0b",
-        "open": "20:30",
-        "close": "23:00",
-        "bands": [
-            {
-                "name": "Morning Grief",
-                "genre": [
-                    "rock"
-                ]
-            },
-            {
-                "name": "Bad Actors",
-                "genre": [
-                    "rock"
-                ]
-            },
-            {
-                "name": "Amenda C",
-                "genre": [
-                    "unknown"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 4,
-        "month": 7,
-        "date": 18,
-        "desc": "Live Music @ The Iron Fairies",
-        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central \u4e2d\u74b0\u8377\u674e\u6d3b\u90531-13\u865f",
-        "open": "22:00",
-        "close": "01:00",
-        "bands": [
-            {
-                "name": "The Flow Band with Wendy Robin",
-                "genre": [
-                    "pop",
-                    "r&b"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 4,
-        "month": 7,
-        "date": 18,
-        "desc": "Live Music",
-        "venue": "P Lounge By Plaisance, G/F, No 1 Duddell St. Central. \u4e2d\u74b0\u90fd\u7239\u5229\u88571\u865f\u5730\u8216",
-        "open": "18:00",
-        "close": "21:00",
-        "bands": [
-            {
-                "name": "Fidela",
-                "genre": [
-                    "pop"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 5,
-        "month": 7,
-        "date": 19,
-        "desc": "Live Music",
-        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai \u7063\u4ed4\u8b1d\u6590\u905390\u865f\u8c6b\u6e2f\u5927\u5ec81\u6a13",
-        "open": "18:00",
-        "close": "01:30",
-        "bands": [
-            {
-                "name": "Steve",
-                "genre": [
-                    "acoustic"
-                ]
-            },
-            {
-                "name": "Tufnils11",
-                "genre": [
-                    "hard rock"
-                ]
-            },
-            {
-                "name": "Funkee Tung",
-                "genre": [
-                    "funk"
-                ]
-            },
-            {
-                "name": "RE'CALL",
-                "genre": [
-                    "rock"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 5,
-        "month": 7,
-        "date": 19,
-        "desc": "Live Music",
-        "venue": "Champagne Bar, Lobby, Grand Hyatt Hong Kong 1 Harbour Rd, Wanchai. \u9999\u6ab3\u5427,\u9999\u6e2f\u541b\u6085\u9152\u5e97,\u7063\u4ed4\u6e2f\u7063\u90531\u865f",
-        "open": "20:45",
-        "close": "23:45",
-        "bands": [
-            {
-                "name": "Jennifer Palor",
-                "genre": [
-                    "jazz"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 5,
-        "month": 7,
-        "date": 19,
-        "desc": "Live Music",
-        "venue": "ELLA, 26/F, The Trilogy, H Code, 45 Pottinger St., Central \u4e2d\u74b0\u7835\u7538\u4e4d\u885745\u865fH Code 26\u6a13",
-        "open": "20:30",
-        "close": "00:00",
-        "bands": [
-            {
-                "name": "Ofentse & Band",
-                "genre": [
-                    "jazz"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 300
-        }
-    },
-    {
-        "weekday": 5,
-        "month": 7,
-        "date": 19,
-        "desc": "Live Music",
-        "venue": "Lau Bak Freespace Livehouse G/F, Freespace, West Kowloon Cultural District, No. 18 Museum Drive, Tsim Sha Tsui \u897f\u4e5d\u6587\u5316\u5340, \u5c16\u6c99\u5480",
-        "open": "20:15",
-        "close": "22:45",
-        "bands": [
-            {
-                "name": "Midnight Ensemble",
-                "genre": [
-                    "classical"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 250
-        }
-    },
-    {
-        "weekday": 5,
-        "month": 7,
-        "date": 19,
-        "desc": "Live Music @ The Iron Fairies",
-        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central \u4e2d\u74b0\u8377\u674e\u6d3b\u90531-13\u865f",
-        "open": "22:00",
-        "close": "01:00",
-        "bands": [
-            {
-                "name": "The Flow Band with Wendy Robin",
-                "genre": [
-                    "pop",
-                    "r&b"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 5,
-        "month": 7,
-        "date": 19,
-        "desc": "Live Music",
-        "venue": "P Lounge By Plaisance, G/F, No 1 Duddell St. Central. \u4e2d\u74b0\u90fd\u7239\u5229\u88571\u865f\u5730\u8216",
-        "open": "18:00",
-        "close": "00:30",
-        "bands": [
-            {
-                "name": "Athena",
-                "genre": [
-                    "pop"
-                ]
-            },
-            {
-                "name": "Ann Andrin",
-                "genre": [
-                    "pop",
-                    "rock"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 6,
-        "month": 7,
-        "date": 20,
-        "desc": "Live Music",
-        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai \u7063\u4ed4\u8b1d\u6590\u905390\u865f\u8c6b\u6e2f\u5927\u5ec81\u6a13",
-        "open": "18:00",
-        "close": "01:30",
-        "bands": [
-            {
-                "name": "Benjie",
-                "genre": [
-                    "acoustic"
-                ]
-            },
-            {
-                "name": "The Cave Men",
-                "genre": [
-                    "rock"
-                ]
-            },
-            {
-                "name": "Maryjane & The Gang",
-                "genre": [
-                    "rock"
-                ]
-            },
-            {
-                "name": "Black Kobra",
-                "genre": [
-                    "rock"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 6,
-        "month": 7,
-        "date": 20,
-        "desc": "Live Jazz Music @Jim Hall",
-        "venue": "Fountain de Chopin , 6/F, Block B, Kai Tak Factory Bldg. Stage 1, 22 Sam Chuk St., Sun Po Kong \u65b0\u84b2\u5d17\u4e09\u795d\u885722\u865f\u555f\u5fb7\u5de5\u696d\u5927\u5ec8\u7b2c\u4e00\u671fB\u5ea7\u516d\u6a13\u7ffb\u9a30\u4e09\u5468\u534a",
-        "open": "20:00",
-        "close": "22:30",
-        "bands": [
-            {
-                "name": "Jonas Cho",
-                "genre": [
-                    "jazz"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 250,
-            "student": 100
-        }
-    },
-    {
-        "weekday": 6,
-        "month": 7,
-        "date": 20,
-        "desc": "Live Music",
-        "venue": "ELLA, 26/F, The Trilogy, H Code, 45 Pottinger St., Central \u4e2d\u74b0\u7835\u7538\u4e4d\u885745\u865fH Code 26\u6a13",
-        "open": "20:30",
-        "close": "00:00",
-        "bands": [
-            {
-                "name": "Elodie Trio",
-                "genre": [
-                    "jazz"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 300
-        }
-    },
-    {
-        "weekday": 6,
-        "month": 7,
-        "date": 20,
-        "desc": "Live Music",
-        "venue": "Lau Bak Freespace Livehouse G/F, Freespace, West Kowloon Cultural District, No. 18 Museum Drive, Tsim Sha Tsui \u897f\u4e5d\u6587\u5316\u5340, \u5c16\u6c99\u5480",
-        "open": "20:15",
-        "close": "22:45",
-        "bands": [
-            {
-                "name": "Rosemances",
-                "genre": [
-                    "pop",
-                    "r\u2018n\u2018b"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 250
-        }
-    },
-    {
-        "weekday": 6,
-        "month": 7,
-        "date": 20,
-        "desc": "Live Music",
-        "venue": "The Sanctum, 3/F, Stanley 11, 11 Stanley St., Central \u4e2d\u74b0\u58eb\u4e39\u5229\u885711\u865fStanley 11 3\u6a13",
-        "open": "21:00",
-        "close": "00:00",
-        "bands": [
-            {
-                "name": "Kara",
-                "genre": [
-                    "jazz"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 6,
-        "month": 7,
-        "date": 20,
-        "desc": "Live Music @ The Iron Fairies",
-        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central \u4e2d\u74b0\u8377\u674e\u6d3b\u90531-13\u865f",
-        "open": "22:00",
-        "close": "02:00",
-        "bands": [
-            {
-                "name": "The Flow Band with Athena",
-                "genre": [
-                    "pop"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 7,
-        "month": 7,
-        "date": 21,
-        "desc": "Live Music",
-        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai \u7063\u4ed4\u8b1d\u6590\u905390\u865f\u8c6b\u6e2f\u5927\u5ec81\u6a13",
-        "open": "16:00",
-        "close": "00:00",
-        "bands": [
-            {
-                "name": "Samantha",
-                "genre": [
-                    "acoustic"
-                ]
-            },
-            {
-                "name": "Armie & Friends",
-                "genre": [
-                    "rock"
-                ]
-            },
-            {
-                "name": "Smooth & Groov'n",
-                "genre": [
-                    "rock"
-                ]
-            },
-            {
-                "name": "The Heartbreakers",
-                "genre": [
-                    "rock"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 7,
-        "month": 7,
-        "date": 21,
-        "desc": "Live Music Wendy Robin Reggae Night",
-        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central \u4e2d\u74b0\u8377\u674e\u6d3b\u90531-13\u865f",
-        "open": "21:30",
-        "close": "00:30",
-        "bands": [
-            {
-                "name": "The Flow Band with Wendy Robin",
-                "genre": [
-                    "reggae"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 1,
-        "month": 7,
-        "date": 22,
-        "desc": "Jam Night",
-        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai \u7063\u4ed4\u8b1d\u6590\u905390\u865f\u8c6b\u6e2f\u5927\u5ec81\u6a13",
-        "open": "18:00",
-        "close": "00:00",
-        "bands": [
-            {
-                "name": "Steve",
-                "genre": [
-                    "acoustic"
-                ]
-            },
-            {
-                "name": "Mark & John",
-                "genre": [
-                    "jam session"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 1,
-        "month": 7,
-        "date": 22,
-        "desc": "Live Music",
-        "venue": "Champagne Bar, Lobby, Grand Hyatt Hong Kong, 1 Harbour Rd, Wanchai. \u9999\u6ab3\u5427,\u9999\u6e2f\u541b\u6085\u9152\u5e97,\u7063\u4ed4\u6e2f\u7063\u90531\u865f",
-        "open": "20:45",
-        "close": "23:45",
-        "bands": [
-            {
-                "name": "Jennifer Palor",
-                "genre": [
-                    "jazz"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 1,
-        "month": 7,
-        "date": 22,
-        "desc": "Live Music",
-        "venue": "Kind of Brew, G/F, 112 First St., Sai Ying Pun. \u897f\u71df\u76e4\u7b2c\u4e00\u8857112\u865f\u5730\u4e0b",
-        "open": "20:00",
-        "close": "22:00",
-        "bands": [
-            {
-                "name": "Alan Kwan X Bowen Li",
-                "genre": [
-                    "jazz"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 350
-        }
-    },
-    {
-        "weekday": 1,
-        "month": 7,
-        "date": 22,
-        "desc": "Live Music @ The Iron Fairies",
-        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central \u4e2d\u74b0\u8377\u674e\u6d3b\u90531-13\u865f",
-        "open": "21:30",
-        "close": "00:30",
-        "bands": [
-            {
-                "name": "Jazz Night",
-                "genre": [
-                    "unknown"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 2,
-        "month": 7,
-        "date": 23,
-        "desc": "Live Music",
-        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai \u7063\u4ed4\u8b1d\u6590\u905390\u865f\u8c6b\u6e2f\u5927\u5ec81\u6a13",
-        "open": "18:00",
-        "close": "00:00",
-        "bands": [
-            {
-                "name": "John",
-                "genre": [
-                    "acoustic"
-                ]
-            },
-            {
-                "name": "The Lockouts",
-                "genre": [
-                    "rock"
-                ]
-            },
-            {
-                "name": "Sandy",
-                "genre": [
-                    "rock"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 2,
-        "month": 7,
-        "date": 23,
-        "desc": "Live Music",
-        "venue": "Champagne Bar, Lobby, Grand Hyatt Hong Kong 1 Harbour Rd, Wanchai. \u9999\u6ab3\u5427,\u9999\u6e2f\u541b\u6085\u9152\u5e97,\u7063\u4ed4\u6e2f\u7063\u90531\u865f",
-        "open": "20:45",
-        "close": "23:45",
-        "bands": [
-            {
-                "name": "Jennifer Palor",
-                "genre": [
-                    "jazz"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 2,
-        "month": 7,
-        "date": 23,
-        "desc": "Live Music @ The Iron Fairies",
-        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central \u4e2d\u74b0\u8377\u674e\u6d3b\u90531-13\u865f",
-        "open": "22:00",
-        "close": "01:00",
-        "bands": [
-            {
-                "name": "Rubicube",
-                "genre": [
-                    "pop rock"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 3,
-        "month": 7,
-        "date": 24,
-        "desc": "Shazza Music Showcase #137",
-        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai \u7063\u4ed4\u8b1d\u6590\u905390\u865f\u8c6b\u6e2f\u5927\u5ec81\u6a13",
-        "open": "21:00",
-        "close": "00:00",
-        "bands": [
-            {
-                "name": "Eduin",
-                "genre": [
-                    "acoustic 6-9pm"
-                ]
-            },
-            {
-                "name": "Silent117",
-                "genre": [
-                    "j rock"
-                ]
-            },
-            {
-                "name": "Bad Actors",
-                "genre": [
-                    "noise rock"
-                ]
-            },
-            {
-                "name": "Nemesis",
-                "genre": [
-                    "rock metal"
-                ]
-            },
-            {
-                "name": "Searchlight",
-                "genre": [
-                    "alt metalcore"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 3,
-        "month": 7,
-        "date": 24,
-        "desc": "Live Music",
-        "venue": "Champagne Bar, Lobby, Grand Hyatt Hong Kong, 1 Harbour Rd, Wanchai. \u9999\u6ab3\u5427,\u9999\u6e2f\u541b\u6085\u9152\u5e97,\u7063\u4ed4\u6e2f\u7063\u90531\u865f",
-        "open": "20:45",
-        "close": "23:45",
-        "bands": [
-            {
-                "name": "Jennifer Palor",
-                "genre": [
-                    "jazz"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 3,
-        "month": 7,
-        "date": 24,
-        "desc": "Live Music",
-        "venue": "ELLA, 26/F, The Trilogy, H Code, 45 Pottinger St., Central \u4e2d\u74b0\u7835\u7538\u4e4d\u885745\u865fH Code 26\u6a13",
-        "open": "20:30",
-        "close": "00:00",
-        "bands": [
-            {
-                "name": "Kara Belle Duo",
-                "genre": [
-                    "jazz"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 300
-        }
-    },
-    {
-        "weekday": 3,
-        "month": 7,
-        "date": 24,
-        "desc": "Live Music",
-        "venue": "The Sanctum, 3/F, Stanley 11, 11 Stanley St., Central \u4e2d\u74b0\u58eb\u4e39\u5229\u885711\u865fStanley 11 3\u6a13",
-        "open": "21:00",
-        "close": "00:00",
-        "bands": [
-            {
-                "name": "Billy Alexander & Janaia Farrell",
-                "genre": [
-                    "jazz"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 3,
-        "month": 7,
-        "date": 24,
-        "desc": "Live Music @ The Iron Fairies",
-        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central \u4e2d\u74b0\u8377\u674e\u6d3b\u90531-13\u865f",
-        "open": "22:00",
-        "close": "01:00",
-        "bands": [
-            {
-                "name": "A.R.T.",
-                "genre": [
-                    "pop"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 0
-        }
-    },
-    {
-        "weekday": 3,
-        "month": 7,
-        "date": 24,
-        "desc": "Live Music",
-        "venue": "PizzaExpress, Shop G31-33, 49-51 Empire Centre, 68 Mody Rd, Tsim Sha Tsui \u5c16\u6c99\u5480\u9ebc\u5730\u905368\u865f\u5e1d\u570b\u4e2d\u5fc3\u5730\u4e0bG31-33\u53caG49-51\u865f\u8216",
-        "open": "20:00",
-        "close": "22:00",
-        "bands": [
-            {
-                "name": "The Musicastle",
-                "genre": [
-                    "pop"
-                ]
-            }
-        ],
-        "tickets": {
-            "standard": 50
-        }
-    },
-    {
-        "weekday": 4,
-        "month": 7,
         "date": 25,
         "desc": "Live Music",
-        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai \u7063\u4ed4\u8b1d\u6590\u905390\u865f\u8c6b\u6e2f\u5927\u5ec81\u6a13",
+        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai 灣仔謝斐道90號豫港大廈1樓",
         "open": "18:00",
         "close": "00:00",
         "bands": [
@@ -1962,7 +36,7 @@
         "month": 7,
         "date": 25,
         "desc": "Jazz Jam & Open Mic",
-        "venue": "Cheek to Cheek Soho, 17 Old Bailey St, Central\u4e2d\u74b0\u5967\u5351\u5229\u885717\u865f",
+        "venue": "Cheek to Cheek Soho, 17 Old Bailey St, Central中環奧卑利街17號",
         "open": "19:00",
         "close": "00:00",
         "bands": [
@@ -1982,7 +56,7 @@
         "month": 7,
         "date": 25,
         "desc": "Live Music",
-        "venue": "Champagne Bar, Lobby, Grand Hyatt Hong Kong, 1 Harbour Rd, Wanchai. \u9999\u6ab3\u5427,\u9999\u6e2f\u541b\u6085\u9152\u5e97,\u7063\u4ed4\u6e2f\u7063\u90531\u865f",
+        "venue": "Champagne Bar, Lobby, Grand Hyatt Hong Kong 1 Harbour Rd, Wanchai. 香檳吧,香港君悅酒店,灣仔港灣道1號",
         "open": "20:45",
         "close": "23:45",
         "bands": [
@@ -2002,7 +76,7 @@
         "month": 7,
         "date": 25,
         "desc": "Live Music",
-        "venue": "ELLA, 26/F, The Trilogy, H Code, 45 Pottinger St., Central \u4e2d\u74b0\u7835\u7538\u4e4d\u885745\u865fH Code 26\u6a13",
+        "venue": "ELLA, 26/F, The Trilogy, H Code, 45 Pottinger St., Central 中環砵甸乍街45號H Code 26樓",
         "open": "20:30",
         "close": "00:00",
         "bands": [
@@ -2022,9 +96,9 @@
         "month": 7,
         "date": 25,
         "desc": "Free Jam",
-        "venue": "The Aftermath 57-59 Wyndham St. L/G Central \u4e2d\u74b0\u96f2\u54b8\u885757-59\u865f\u4f4e\u5c64\u5730\u4e0b",
+        "venue": "The Aftermath 57-59 Wyndham St. L/G Central 中環雲咸街57-59號低層地下",
         "open": "20:00",
-        "close": "23:00",
+        "close": "??:??",
         "bands": [
             {
                 "name": "Free Jam",
@@ -2042,7 +116,7 @@
         "month": 7,
         "date": 25,
         "desc": "Live Music",
-        "venue": "Kind of Brew, G/F, 112 First St., Sai Ying Pun. \u897f\u71df\u76e4\u7b2c\u4e00\u8857112\u865f\u5730\u4e0b",
+        "venue": "Kind of Brew, G/F, 112 First St., Sai Ying Pun. 西營盤第一街112號地下",
         "open": "20:00",
         "close": "22:00",
         "bands": [
@@ -2061,8 +135,29 @@
         "weekday": 4,
         "month": 7,
         "date": 25,
+        "desc": "Live Music",
+        "venue": "The Stage, 2/F, the Heritage Woo Cheong Pawn Shop, 60A-66 Johnston Rd., Wan Chai, 灣仔莊士敦道62號 2樓",
+        "open": "21:00",
+        "close": "00:00",
+        "bands": [
+            {
+                "name": "Ofentse",
+                "genre": [
+                    "afro",
+                    "r&b"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 4,
+        "month": 7,
+        "date": 25,
         "desc": "Live Music @ The Iron Fairies",
-        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central \u4e2d\u74b0\u8377\u674e\u6d3b\u90531-13\u865f",
+        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central 中環荷李活道1-13號",
         "open": "22:00",
         "close": "01:00",
         "bands": [
@@ -2071,6 +166,2053 @@
                 "genre": [
                     "pop",
                     "r&b"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 5,
+        "month": 7,
+        "date": 26,
+        "desc": "Music Club, HKU Presents: Indie Gig - “Noises”",
+        "venue": "Fringe Dairy, Fringe Club, 2 Lower Albert Rd, Central. 中環下亞厘畢道二號藝穗會賽奶庫",
+        "open": "20:00",
+        "close": "22:00",
+        "bands": [
+            {
+                "name": "Project 9",
+                "genre": [
+                    "hard rock",
+                    "metalcore"
+                ]
+            },
+            {
+                "name": "Cozy Syndrome",
+                "genre": [
+                    "rock"
+                ]
+            },
+            {
+                "name": "Dvk",
+                "genre": [
+                    "mumble rap"
+                ]
+            },
+            {
+                "name": "WanillaCoco",
+                "genre": [
+                    "pop"
+                ]
+            },
+            {
+                "name": "PetPetShawn",
+                "genre": [
+                    "hip-hop"
+                ]
+            },
+            {
+                "name": "M4gang",
+                "genre": [
+                    "lofi"
+                ]
+            }
+        ],
+        "tickets": {
+            "advance": 299,
+            "door": 350
+        }
+    },
+    {
+        "weekday": 5,
+        "month": 7,
+        "date": 26,
+        "desc": "Unknown",
+        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai 灣仔謝斐道90號豫港大廈1樓",
+        "open": "18:00",
+        "close": "01:30",
+        "bands": [
+            {
+                "name": "Steve",
+                "genre": [
+                    "acoustic"
+                ]
+            },
+            {
+                "name": "CLS",
+                "genre": [
+                    "modern jazz"
+                ]
+            },
+            {
+                "name": "Maryjane & The Gang",
+                "genre": [
+                    "rock"
+                ]
+            },
+            {
+                "name": "Four Play",
+                "genre": [
+                    "rock"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 5,
+        "month": 7,
+        "date": 26,
+        "desc": "Live Music @ The Iron Fairies",
+        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central 中環荷李活道1-13號",
+        "open": "22:00",
+        "close": "02:00",
+        "bands": [
+            {
+                "name": "The Flow Band with Wendy Robin",
+                "genre": [
+                    "pop",
+                    "r&b"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 5,
+        "month": 7,
+        "date": 26,
+        "desc": "Live Music",
+        "venue": "The Stage, 2/F, the Heritage Woo Cheong Pawn Shop, 60A-66 Johnston Rd., Wan Chai, 灣仔莊士敦道62號 2樓",
+        "open": "21:00",
+        "close": "00:00",
+        "bands": [
+            {
+                "name": "Lydia Bao",
+                "genre": [
+                    "pop",
+                    "r&b"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 5,
+        "month": 7,
+        "date": 26,
+        "desc": "Live Music",
+        "venue": "Cheek to Cheek Soho, 17 Old Bailey St, Central中環奧卑利街17號",
+        "open": "21:00",
+        "close": "22:30",
+        "bands": [
+            {
+                "name": "Jessica Leung",
+                "genre": [
+                    "pop"
+                ]
+            },
+            {
+                "name": "Nate Wong",
+                "genre": [
+                    "drums"
+                ]
+            },
+            {
+                "name": "Jerold Chu",
+                "genre": [
+                    "piano"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 300
+        }
+    },
+    {
+        "weekday": 5,
+        "month": 7,
+        "date": 26,
+        "desc": "Live Music",
+        "venue": "ELLA, 26/F, The Trilogy, H Code, 45 Pottinger St., Central 中環砵甸乍街45號H Code 26樓",
+        "open": "20:30",
+        "close": "00:00",
+        "bands": [
+            {
+                "name": "Ofentse & Band",
+                "genre": [
+                    "jazz"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 300
+        }
+    },
+    {
+        "weekday": 5,
+        "month": 7,
+        "date": 26,
+        "desc": "Live Music",
+        "venue": "Maggie Choo's, G/F Chinachem Hollywood Centre, Central, 中環華懋荷李活中心",
+        "open": "20:00",
+        "close": "10:00",
+        "bands": [
+            {
+                "name": "Tumbao Quartet",
+                "genre": [
+                    "latin jazz"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 5,
+        "month": 7,
+        "date": 26,
+        "desc": "Live Jazz Music @Jim Hall",
+        "venue": "Fountain de Chopin , 6/F, Block B, Kai Tak Factory Bldg. Stage 1, 22 Sam Chuk St., Sun Po Kong 新蒲崗三祝街22號啟德工業大廈第一期B座六樓翻騰三周半",
+        "open": "20:00",
+        "close": "22:30",
+        "bands": [
+            {
+                "name": "Eric chong X Rachel sung",
+                "genre": [
+                    "jazz"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 250,
+            "student": 100
+        }
+    },
+    {
+        "weekday": 5,
+        "month": 7,
+        "date": 26,
+        "desc": "Live Music",
+        "venue": "P Lounge By Plaisance, G/F, No 1 Duddell St. Central. 中環都爹利街1號地舖",
+        "open": "18:00",
+        "close": "00:30",
+        "bands": [
+            {
+                "name": "Athena",
+                "genre": [
+                    "pop"
+                ]
+            },
+            {
+                "name": "Ann",
+                "genre": [
+                    "pop"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 5,
+        "month": 7,
+        "date": 26,
+        "desc": "Live Music",
+        "venue": "Fringe Dairy, Fringe Club, 2 Lower Albert Rd, Central. 中環下亞厘畢道二號藝穗會賽奶庫",
+        "open": "20:00",
+        "close": "22:00",
+        "bands": [
+            {
+                "name": "Project 9",
+                "genre": [
+                    "hard rock",
+                    "metalcore"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 299
+        }
+    },
+    {
+        "weekday": 5,
+        "month": 7,
+        "date": 26,
+        "desc": "Live Music",
+        "venue": "The Aftermath 57-59 Wyndham St. L/G Central 中環雲咸街57-59號低層地下",
+        "open": "21:15",
+        "close": "00:00",
+        "bands": [
+            {
+                "name": "Gravity",
+                "genre": [
+                    "pop"
+                ]
+            },
+            {
+                "name": "The Octopus",
+                "genre": [
+                    "rock"
+                ]
+            },
+            {
+                "name": "Entry",
+                "genre": [
+                    "rock metal"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 5,
+        "month": 7,
+        "date": 26,
+        "desc": "Live Music Summer Night Lounge",
+        "venue": "The Southside. LG Atrium, 11 Heung Yip Rd., Wong Chuk Hang 黃竹坑香葉道11號LG中庭",
+        "open": "19:30",
+        "close": "20:30",
+        "bands": [
+            {
+                "name": "陳柏宇, 葉巧琳",
+                "genre": [
+                    "pop"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 6,
+        "month": 7,
+        "date": 27,
+        "desc": "Live Music",
+        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai 灣仔謝斐道90號豫港大廈1樓",
+        "open": "18:00",
+        "close": "01:30",
+        "bands": [
+            {
+                "name": "Benjie",
+                "genre": [
+                    "acoustic"
+                ]
+            },
+            {
+                "name": "OzMiu",
+                "genre": [
+                    "metal"
+                ]
+            },
+            {
+                "name": "Say Mosquito",
+                "genre": [
+                    "rock"
+                ]
+            },
+            {
+                "name": "The Cave Men",
+                "genre": [
+                    "rock"
+                ]
+            },
+            {
+                "name": "RE' CALL",
+                "genre": [
+                    "rock"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 6,
+        "month": 7,
+        "date": 27,
+        "desc": "Live Music @ The Iron Fairies",
+        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central 中環荷李活道1-13號",
+        "open": "22:00",
+        "close": "02:00",
+        "bands": [
+            {
+                "name": "The Flow Band with Athena",
+                "genre": [
+                    "rock"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 6,
+        "month": 7,
+        "date": 27,
+        "desc": "Live Music",
+        "venue": "The Stage, 2/F, the Heritage Woo Cheong Pawn Shop, 60A-66 Johnston Rd., Wan Chai, 灣仔莊士敦道62號 2樓",
+        "open": "21:00",
+        "close": "00:00",
+        "bands": [
+            {
+                "name": "Dimple Cruz",
+                "genre": [
+                    "funk",
+                    "r&b",
+                    "soul"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 6,
+        "month": 7,
+        "date": 27,
+        "desc": "Chez Trente Living Room Concert no.219",
+        "venue": "",
+        "open": "21:00",
+        "close": "23:00",
+        "bands": [
+            {
+                "name": "Jessica Leung",
+                "genre": [
+                    "pop"
+                ]
+            },
+            {
+                "name": "Nate Wong",
+                "genre": [
+                    "drums"
+                ]
+            },
+            {
+                "name": "Jerold Chu",
+                "genre": [
+                    "piano"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 180
+        }
+    },
+    {
+        "weekday": 6,
+        "month": 7,
+        "date": 27,
+        "desc": "Live Music",
+        "venue": "ELLA, 26/F, The Trilogy, H Code, 45 Pottinger St., Central 中環砵甸乍街45號H Code 26樓",
+        "open": "20:30",
+        "close": "00:00",
+        "bands": [
+            {
+                "name": "Elodie Trio",
+                "genre": [
+                    "jazz"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 300
+        }
+    },
+    {
+        "weekday": 6,
+        "month": 7,
+        "date": 27,
+        "desc": "Live Music",
+        "venue": "Maggie Choo's, G/F Chinachem Hollywood Centre, Central, 中環華懋荷李活中心",
+        "open": "20:00",
+        "close": "10:00",
+        "bands": [
+            {
+                "name": "Tumbao Quartet",
+                "genre": [
+                    "latin jazz"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 6,
+        "month": 7,
+        "date": 27,
+        "desc": "Live Music",
+        "venue": "Lau Bak Freespace Livehouse G/F, Freespace, West Kowloon Cultural District, No. 18 Museum Drive, Tsim Sha Tsui 西九文化區, 尖沙咀",
+        "open": "20:15",
+        "close": "22:45",
+        "bands": [
+            {
+                "name": "Diane Squat",
+                "genre": [
+                    "punk"
+                ]
+            },
+            {
+                "name": "Rumba",
+                "genre": [
+                    "jazz",
+                    "pop"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 250
+        }
+    },
+    {
+        "weekday": 6,
+        "month": 7,
+        "date": 27,
+        "desc": "Live Music",
+        "venue": "The Aftermath 57-59 Wyndham St. L/G Central 中環雲咸街57-59號低層地下",
+        "open": "20:00",
+        "close": "23:00",
+        "bands": [
+            {
+                "name": "Covers of Covers",
+                "genre": [
+                    "funk"
+                ]
+            },
+            {
+                "name": "Manjo Jam",
+                "genre": [
+                    "canto pop"
+                ]
+            },
+            {
+                "name": "Ocean Boulevard",
+                "genre": [
+                    "tropical rock"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 6,
+        "month": 7,
+        "date": 27,
+        "desc": "Live Music",
+        "venue": "The Sanctum, 3/F, Stanley 11, 11 Stanley St., Central 中環士丹利街11號Stanley 11 3樓",
+        "open": "21:00",
+        "close": "00:00",
+        "bands": [
+            {
+                "name": "Kara",
+                "genre": [
+                    "jazz"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 6,
+        "month": 7,
+        "date": 27,
+        "desc": "Live Music",
+        "venue": "Terrible Baby, 4/F Eaton HK, 380 Nathan Rd. Kowloon. 九龍彌敦道380號",
+        "open": "21:00",
+        "close": "23:30",
+        "bands": [
+            {
+                "name": "Reggie the Leaf & Co",
+                "genre": [
+                    "groovy funk"
+                ]
+            },
+            {
+                "name": "Spora",
+                "genre": [
+                    "synths"
+                ]
+            },
+            {
+                "name": "Gara",
+                "genre": [
+                    "beatbox"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 150
+        }
+    },
+    {
+        "weekday": 6,
+        "month": 7,
+        "date": 27,
+        "desc": "Live Music",
+        "venue": "Kind of Brew, G/F, 112 First St., Sai Ying Pun. 西營盤第一街112號地下",
+        "open": "20:00",
+        "close": "22:00",
+        "bands": [
+            {
+                "name": "CY Leo X Teriver Cheung",
+                "genre": [
+                    "jazz"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 400
+        }
+    },
+    {
+        "weekday": 6,
+        "month": 7,
+        "date": 27,
+        "desc": "Live Music",
+        "venue": "Ohm…cafe and bar 152, Yu Chau St. Shum Shui Po. 深水埗汝州街152號",
+        "open": "20:30",
+        "close": "22:00",
+        "bands": [
+            {
+                "name": "Michelle",
+                "genre": [
+                    "pop"
+                ]
+            },
+            {
+                "name": "Wayne",
+                "genre": [
+                    "pop"
+                ]
+            },
+            {
+                "name": "Kannis",
+                "genre": [
+                    "pop"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 150
+        }
+    },
+    {
+        "weekday": 7,
+        "month": 7,
+        "date": 28,
+        "desc": "Live Music",
+        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai 灣仔謝斐道90號豫港大廈1樓",
+        "open": "16:00",
+        "close": "00:00",
+        "bands": [
+            {
+                "name": "Samantha",
+                "genre": [
+                    "acoustic"
+                ]
+            },
+            {
+                "name": "Armie & Friends",
+                "genre": [
+                    "rock"
+                ]
+            },
+            {
+                "name": "Smooth N Groov'n",
+                "genre": [
+                    "funk",
+                    "rock"
+                ]
+            },
+            {
+                "name": "Gonzales Musika",
+                "genre": [
+                    "rock"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 7,
+        "month": 7,
+        "date": 28,
+        "desc": "Live Music @ The Iron Fairies",
+        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central 中環荷李活道1-13號",
+        "open": "21:30",
+        "close": "00:30",
+        "bands": [
+            {
+                "name": "Reggae Night",
+                "genre": [
+                    "with wendy robin"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 7,
+        "month": 7,
+        "date": 28,
+        "desc": "Live Music",
+        "venue": "Maggie Choo's, G/F Chinachem Hollywood Centre, Central, 中環華懋荷李活中心",
+        "open": "20:00",
+        "close": "10:00",
+        "bands": [
+            {
+                "name": "Geoff King Luk & Scott Dodo",
+                "genre": [
+                    "jazz"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 7,
+        "month": 7,
+        "date": 28,
+        "desc": "Live Music",
+        "venue": "Shop 222A, Level 2, K11 Art Mall, 18 Hanoi Rd., Tsim Sha Tsui. 尖沙咀 河內道18號K11 購物藝術館 2樓222A號",
+        "open": "19:30",
+        "close": "23:00",
+        "bands": [
+            {
+                "name": "Patrick Lui Trio",
+                "genre": [
+                    "jazz"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 7,
+        "month": 7,
+        "date": 28,
+        "desc": "Live Music",
+        "venue": "Ohm…cafe and bar 152, Yu Chau St. Shum Shui Po. 深水埗汝州街152號",
+        "open": "20:30",
+        "close": "22:00",
+        "bands": [
+            {
+                "name": "Cynthia",
+                "genre": [
+                    "pop"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 150
+        }
+    },
+    {
+        "weekday": 1,
+        "month": 7,
+        "date": 29,
+        "desc": "Live Music @ The Iron Fairies",
+        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central 中環荷李活道1-13號",
+        "open": "21:30",
+        "close": "00:30",
+        "bands": [
+            {
+                "name": "Jazz Night",
+                "genre": [
+                    "unknown"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 1,
+        "month": 7,
+        "date": 29,
+        "desc": "Live Music",
+        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai 灣仔謝斐道90號豫港大廈1樓",
+        "open": "18:00",
+        "close": "22:30",
+        "bands": [
+            {
+                "name": "Steve",
+                "genre": [
+                    "acoustic"
+                ]
+            },
+            {
+                "name": "Mark & John",
+                "genre": [
+                    "jam session"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 1,
+        "month": 7,
+        "date": 29,
+        "desc": "Live Music",
+        "venue": "Champagne Bar, Lobby, Grand Hyatt Hong Kong 1 Harbour Rd, Wanchai. 香檳吧,香港君悅酒店,灣仔港灣道1號",
+        "open": "20:45",
+        "close": "23:45",
+        "bands": [
+            {
+                "name": "Jennifer Palor",
+                "genre": [
+                    "jazz"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 2,
+        "month": 7,
+        "date": 30,
+        "desc": "Live Music",
+        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai 灣仔謝斐道90號豫港大廈1樓",
+        "open": "18:00",
+        "close": "00:00",
+        "bands": [
+            {
+                "name": "John",
+                "genre": [
+                    "acoustic"
+                ]
+            },
+            {
+                "name": "The Happy",
+                "genre": [
+                    "rock",
+                    "rolling stones tribute"
+                ]
+            },
+            {
+                "name": "unknown",
+                "genre": [
+                    "unknown"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 2,
+        "month": 7,
+        "date": 30,
+        "desc": "SEEAHOLE “NODES”",
+        "venue": "Fringe Dairy, Fringe Club, 2 Lower Albert Rd, Central. 中環下亞厘畢道二號藝穗會賽奶庫",
+        "open": "20:30",
+        "close": "23:00",
+        "bands": [
+            {
+                "name": "Sea Island & Ferry 海島小輪",
+                "genre": [
+                    "emd",
+                    "neo-chamber"
+                ]
+            }
+        ],
+        "tickets": {
+            "advance": 240,
+            "door": 300
+        }
+    },
+    {
+        "weekday": 2,
+        "month": 7,
+        "date": 30,
+        "desc": "Live Music @ The Iron Fairies",
+        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central 中環荷李活道1-13號",
+        "open": "22:00",
+        "close": "01:00",
+        "bands": [
+            {
+                "name": "Rubicube",
+                "genre": [
+                    "pop rock"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 2,
+        "month": 7,
+        "date": 30,
+        "desc": "Live Music",
+        "venue": "Champagne Bar, Lobby, Grand Hyatt Hong Kong 1 Harbour Rd, Wanchai. 香檳吧,香港君悅酒店,灣仔港灣道1號",
+        "open": "20:45",
+        "close": "23:45",
+        "bands": [
+            {
+                "name": "Jennifer Palor",
+                "genre": [
+                    "jazz"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 3,
+        "month": 7,
+        "date": 31,
+        "desc": "Live Music",
+        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai 灣仔謝斐道90號豫港大廈1樓",
+        "open": "18:00",
+        "close": "00:00",
+        "bands": [
+            {
+                "name": "Eduin",
+                "genre": [
+                    "acoustic"
+                ]
+            },
+            {
+                "name": "NANA",
+                "genre": [
+                    "rock"
+                ]
+            },
+            {
+                "name": "Gonzales Musika",
+                "genre": [
+                    "rock"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 3,
+        "month": 7,
+        "date": 31,
+        "desc": "Live Music @ The Iron Fairies",
+        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central 中環荷李活道1-13號",
+        "open": "22:00",
+        "close": "01:00",
+        "bands": [
+            {
+                "name": "A.R.T.",
+                "genre": [
+                    "pop"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 3,
+        "month": 7,
+        "date": 31,
+        "desc": "Live Music",
+        "venue": "ELLA, 26/F, The Trilogy, H Code, 45 Pottinger St., Central 中環砵甸乍街45號H Code 26樓",
+        "open": "20:30",
+        "close": "00:00",
+        "bands": [
+            {
+                "name": "Monina",
+                "genre": [
+                    "jazz"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 300
+        }
+    },
+    {
+        "weekday": 3,
+        "month": 7,
+        "date": 31,
+        "desc": "Live Music",
+        "venue": "The Sanctum, 3/F, Stanley 11, 11 Stanley St., Central 中環士丹利街11號Stanley 11 3樓",
+        "open": "21:00",
+        "close": "00:00",
+        "bands": [
+            {
+                "name": "Billy Alexander & Janaia Farrell",
+                "genre": [
+                    "jazz"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 3,
+        "month": 7,
+        "date": 31,
+        "desc": "Live Music",
+        "venue": "PizzaExpress, Shop G31-33, 49-51 Empire Centre, 68 Mody Rd, Tsim Sha Tsui 尖沙咀麼地道68號帝國中心地下G31-33及G49-51號舖",
+        "open": "20:00",
+        "close": "22:00",
+        "bands": [
+            {
+                "name": "Michael",
+                "genre": [
+                    "pop"
+                ]
+            },
+            {
+                "name": "Samantha",
+                "genre": [
+                    "pop"
+                ]
+            },
+            {
+                "name": "Tin",
+                "genre": [
+                    "pop"
+                ]
+            },
+            {
+                "name": "Yip",
+                "genre": [
+                    "pop"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 50
+        }
+    },
+    {
+        "weekday": 3,
+        "month": 7,
+        "date": 31,
+        "desc": "Live Music",
+        "venue": "Champagne Bar, Lobby, Grand Hyatt Hong Kong 1 Harbour Rd, Wanchai. 香檳吧,香港君悅酒店,灣仔港灣道1號",
+        "open": "20:45",
+        "close": "23:45",
+        "bands": [
+            {
+                "name": "Jennifer Palor",
+                "genre": [
+                    "jazz"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 4,
+        "month": 8,
+        "date": 1,
+        "desc": "Live Music",
+        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai 灣仔謝斐道90號豫港大廈1樓",
+        "open": "19:00",
+        "close": "00:00",
+        "bands": [
+            {
+                "name": "John",
+                "genre": [
+                    "acoustic"
+                ]
+            },
+            {
+                "name": "Blues Collection",
+                "genre": [
+                    "blues"
+                ]
+            },
+            {
+                "name": "Fourplay",
+                "genre": [
+                    "rock"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 4,
+        "month": 8,
+        "date": 1,
+        "desc": "Live Music @ The Iron Fairies",
+        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central 中環荷李活道1-13號",
+        "open": "22:00",
+        "close": "01:00",
+        "bands": [
+            {
+                "name": "The Flow Band with Wendy Robin",
+                "genre": [
+                    "pop",
+                    "r&b"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 4,
+        "month": 8,
+        "date": 1,
+        "desc": "CT Classical Special Concert",
+        "venue": "Chez Trente, 39 Staunton St, Central 中環士丹頓街39號",
+        "open": "21:00",
+        "close": "23:00",
+        "bands": [
+            {
+                "name": "Ryan Chan X Jose Leung",
+                "genre": [
+                    "pop"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 180
+        }
+    },
+    {
+        "weekday": 4,
+        "month": 8,
+        "date": 1,
+        "desc": "Jazz Jam & Open Mic",
+        "venue": "Cheek to Cheek Soho, 17 Old Bailey St, Central中環奧卑利街17號",
+        "open": "19:00",
+        "close": "00:00",
+        "bands": [
+            {
+                "name": "Jazz Jam Nite",
+                "genre": [
+                    "jam session"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 4,
+        "month": 8,
+        "date": 1,
+        "desc": "Live Music @ Standup Opera! Series! Opera Goes to Hollywood, Opera棟篤唱",
+        "venue": "Fringe Dairy, Fringe Club, 2 Lower Albert Rd, Central. 中環下亞厘畢道二號藝穗會賽奶庫",
+        "open": "20:00",
+        "close": "22:00",
+        "bands": [
+            {
+                "name": "Bianca Lau",
+                "genre": [
+                    "opera"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 320
+        }
+    },
+    {
+        "weekday": 4,
+        "month": 8,
+        "date": 1,
+        "desc": "Live Music",
+        "venue": "Champagne Bar, Lobby, Grand Hyatt Hong Kong 1 Harbour Rd, Wanchai. 香檳吧,香港君悅酒店,灣仔港灣道1號",
+        "open": "20:45",
+        "close": "23:45",
+        "bands": [
+            {
+                "name": "Jennifer Palor",
+                "genre": [
+                    "jazz"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 5,
+        "month": 8,
+        "date": 2,
+        "desc": "Live Music",
+        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai 灣仔謝斐道90號豫港大廈1樓",
+        "open": "19:00",
+        "close": "01:30",
+        "bands": [
+            {
+                "name": "Steve",
+                "genre": [
+                    "acoustic"
+                ]
+            },
+            {
+                "name": "Happy Lamb Band",
+                "genre": [
+                    "punk pop"
+                ]
+            },
+            {
+                "name": "Maryjane & The Gang",
+                "genre": [
+                    "rock"
+                ]
+            },
+            {
+                "name": "Rubicube",
+                "genre": [
+                    "rock"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 5,
+        "month": 8,
+        "date": 2,
+        "desc": "Live Music @ The Iron Fairies",
+        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central 中環荷李活道1-13號",
+        "open": "22:00",
+        "close": "02:00",
+        "bands": [
+            {
+                "name": "The Flow Band with Wendy Robin",
+                "genre": [
+                    "pop",
+                    "r&b"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 5,
+        "month": 8,
+        "date": 2,
+        "desc": "Live Music",
+        "venue": "Champagne Bar, Lobby, Grand Hyatt Hong Kong 1 Harbour Rd, Wanchai. 香檳吧,香港君悅酒店,灣仔港灣道1號",
+        "open": "20:45",
+        "close": "23:45",
+        "bands": [
+            {
+                "name": "Jennifer Palor",
+                "genre": [
+                    "jazz"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 5,
+        "month": 8,
+        "date": 2,
+        "desc": "Live Music",
+        "venue": "Shop A&C, G/F, Fairview Mansion, 51 Paterson St., Causeway Bay. 銅鑼灣百德新街51號華爾大廈 A&C地舖",
+        "open": "21:00",
+        "close": "23:00",
+        "bands": [
+            {
+                "name": "Kitt Lau",
+                "genre": [
+                    "pop"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 5,
+        "month": 8,
+        "date": 2,
+        "desc": "Live Music",
+        "venue": "Shop 222A, Level 2, K11 Art Mall, 18 Hanoi Rd., Tsim Sha Tsui. 尖沙咀 河內道18號K11 購物藝術館 2樓222A號",
+        "open": "19:30",
+        "close": "23:00",
+        "bands": [
+            {
+                "name": "Site Access",
+                "genre": [
+                    "groove funk"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 6,
+        "month": 8,
+        "date": 3,
+        "desc": "Live Music",
+        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai 灣仔謝斐道90號豫港大廈1樓",
+        "open": "19:00",
+        "close": "01:30",
+        "bands": [
+            {
+                "name": "Benjie",
+                "genre": [
+                    "acoustic"
+                ]
+            },
+            {
+                "name": "The Chainsaw",
+                "genre": [
+                    "hard rock"
+                ]
+            },
+            {
+                "name": "ADD9",
+                "genre": [
+                    "rock"
+                ]
+            },
+            {
+                "name": "RE' CALL",
+                "genre": [
+                    "rock"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 6,
+        "month": 8,
+        "date": 3,
+        "desc": "Live Music @ Unison Fest 2024潛台祭",
+        "venue": "",
+        "open": "16:00",
+        "close": "21:00",
+        "bands": [
+            {
+                "name": "Hello Nico",
+                "genre": [
+                    "pop",
+                    "taiwan 台灣"
+                ]
+            },
+            {
+                "name": "The Hertz",
+                "genre": [
+                    "funk",
+                    "rock"
+                ]
+            },
+            {
+                "name": "公館青少年",
+                "genre": [
+                    "pop",
+                    "taiwan 台灣"
+                ]
+            },
+            {
+                "name": "Pandora",
+                "genre": [
+                    "pop",
+                    "rock"
+                ]
+            },
+            {
+                "name": "李拾壹",
+                "genre": [
+                    "pop"
+                ]
+            },
+            {
+                "name": "maniac",
+                "genre": [
+                    "pop"
+                ]
+            },
+            {
+                "name": "Jan Curious × Fountain de Chopin",
+                "genre": [
+                    "jazz"
+                ]
+            },
+            {
+                "name": "FIST BUMP",
+                "genre": [
+                    "pop punk"
+                ]
+            },
+            {
+                "name": "雷同二友",
+                "genre": [
+                    "pop"
+                ]
+            },
+            {
+                "name": "謝雅兒",
+                "genre": [
+                    "pop"
+                ]
+            },
+            {
+                "name": "AnnahisbbuR",
+                "genre": [
+                    "laid back"
+                ]
+            },
+            {
+                "name": "話梅鹿",
+                "genre": [
+                    "rock"
+                ]
+            },
+            {
+                "name": "モノクローム MONOCHROME",
+                "genre": [
+                    "pop"
+                ]
+            },
+            {
+                "name": "Ragpickers",
+                "genre": [
+                    "hip-hop",
+                    "pop rock"
+                ]
+            },
+            {
+                "name": "ROSEMANCES",
+                "genre": [
+                    "emd pop"
+                ]
+            }
+        ],
+        "tickets": {
+            "One Day 一日票": 580,
+            "Two Day 雙日票": 980,
+            "student": 880
+        }
+    },
+    {
+        "weekday": 6,
+        "month": 8,
+        "date": 3,
+        "desc": "Live Music @ The Iron Fairies",
+        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central 中環荷李活道1-13號",
+        "open": "22:00",
+        "close": "02:00",
+        "bands": [
+            {
+                "name": "The Flow Band with Athena",
+                "genre": [
+                    "rock"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 6,
+        "month": 8,
+        "date": 3,
+        "desc": "Live Music @ New Bomb音樂會",
+        "venue": "Aqualand 香港海洋公園水上樂園",
+        "open": "18:30",
+        "close": "20:30",
+        "bands": [
+            {
+                "name": "Vincy泳兒",
+                "genre": [
+                    "pop"
+                ]
+            },
+            {
+                "name": "Aiden洪助昇",
+                "genre": [
+                    "pop"
+                ]
+            },
+            {
+                "name": "Dark黃明德",
+                "genre": [
+                    "pop"
+                ]
+            },
+            {
+                "name": "Andy 黎展峯",
+                "genre": [
+                    "pop"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 488
+        }
+    },
+    {
+        "weekday": 6,
+        "month": 8,
+        "date": 3,
+        "desc": "Live Music",
+        "venue": "Fringe Dairy, Fringe Club, 2 Lower Albert Rd, Central. 中環下亞厘畢道二號藝穗會賽奶庫",
+        "open": "20:00",
+        "close": "22:30",
+        "bands": [
+            {
+                "name": "Kendy Suen",
+                "genre": [
+                    "pop"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 380
+        }
+    },
+    {
+        "weekday": 6,
+        "month": 8,
+        "date": 3,
+        "desc": "Live Music",
+        "venue": "The Sanctum, 3/F, Stanley 11, 11 Stanley St., Central 中環士丹利街11號Stanley 11 3樓",
+        "open": "21:00",
+        "close": "00:00",
+        "bands": [
+            {
+                "name": "Kara",
+                "genre": [
+                    "jazz"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 6,
+        "month": 8,
+        "date": 3,
+        "desc": "Live Music",
+        "venue": "Shop A&C, G/F, Fairview Mansion, 51 Paterson St., Causeway Bay. 銅鑼灣百德新街51號華爾大廈 A&C地舖",
+        "open": "21:00",
+        "close": "23:00",
+        "bands": [
+            {
+                "name": "LiLi Forest",
+                "genre": [
+                    "pop"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 6,
+        "month": 8,
+        "date": 3,
+        "desc": "Live Music",
+        "venue": "Champagne Bar, Lobby, Grand Hyatt Hong Kong 1 Harbour Rd, Wanchai. 香檳吧,香港君悅酒店,灣仔港灣道1號",
+        "open": "20:45",
+        "close": "23:45",
+        "bands": [
+            {
+                "name": "Jennifer Palor",
+                "genre": [
+                    "jazz"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 6,
+        "month": 8,
+        "date": 3,
+        "desc": "Live Music",
+        "venue": "Shop 222A, Level 2, K11 Art Mall, 18 Hanoi Rd., Tsim Sha Tsui. 尖沙咀 河內道18號K11 購物藝術館 2樓222A號",
+        "open": "19:30",
+        "close": "23:00",
+        "bands": [
+            {
+                "name": "Lester Lam",
+                "genre": [
+                    "pop"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 7,
+        "month": 8,
+        "date": 4,
+        "desc": "Live Music",
+        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai 灣仔謝斐道90號豫港大廈1樓",
+        "open": "16:00",
+        "close": "23:30",
+        "bands": [
+            {
+                "name": "Samantha",
+                "genre": [
+                    "classics",
+                    "soft rock"
+                ]
+            },
+            {
+                "name": "Armie &Friends",
+                "genre": [
+                    "rock"
+                ]
+            },
+            {
+                "name": "Britsix",
+                "genre": [
+                    "beatles tribute"
+                ]
+            },
+            {
+                "name": "Black Kobra",
+                "genre": [
+                    "rock"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 7,
+        "month": 8,
+        "date": 4,
+        "desc": "Live Music @ Unison Fest 2024潛台祭",
+        "venue": "",
+        "open": "16:00",
+        "close": "21:00",
+        "bands": [
+            {
+                "name": "KOLOR",
+                "genre": [
+                    "rock"
+                ]
+            },
+            {
+                "name": "Jason Kui",
+                "genre": [
+                    "pop"
+                ]
+            },
+            {
+                "name": "KiriT",
+                "genre": [
+                    "pop"
+                ]
+            },
+            {
+                "name": "Zpecial",
+                "genre": [
+                    "pop"
+                ]
+            },
+            {
+                "name": "Foolya 虎牙",
+                "genre": [
+                    "pop"
+                ]
+            },
+            {
+                "name": "Luna and The Bosin",
+                "genre": [
+                    "rap"
+                ]
+            },
+            {
+                "name": "Lewsz",
+                "genre": [
+                    "hip-hop"
+                ]
+            },
+            {
+                "name": "TES 地球旅人",
+                "genre": [
+                    "rock"
+                ]
+            },
+            {
+                "name": "凡枯",
+                "genre": [
+                    "rock"
+                ]
+            },
+            {
+                "name": "Kowloon K",
+                "genre": [
+                    "jazz"
+                ]
+            },
+            {
+                "name": "COPAK",
+                "genre": [
+                    "indie pop",
+                    "synth pop"
+                ]
+            },
+            {
+                "name": "Dessy 守—",
+                "genre": [
+                    "melodic rap"
+                ]
+            },
+            {
+                "name": "Revery",
+                "genre": [
+                    "rock"
+                ]
+            },
+            {
+                "name": "周卓盈 MIC",
+                "genre": [
+                    "pop"
+                ]
+            },
+            {
+                "name": "福頭老師",
+                "genre": [
+                    "rock"
+                ]
+            }
+        ],
+        "tickets": {
+            "One Day 一日票": 580,
+            "Two Day 雙日票": 980,
+            "student": 880
+        }
+    },
+    {
+        "weekday": 7,
+        "month": 8,
+        "date": 4,
+        "desc": "Live Music @ The Iron Fairies",
+        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central 中環荷李活道1-13號",
+        "open": "21:30",
+        "close": "00:30",
+        "bands": [
+            {
+                "name": "Reggae Night",
+                "genre": [
+                    "with wendy robin"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 7,
+        "month": 8,
+        "date": 4,
+        "desc": "Live Music",
+        "venue": "Shop A&C, G/F, Fairview Mansion, 51 Paterson St., Causeway Bay. 銅鑼灣百德新街51號華爾大廈 A&C地舖",
+        "open": "14:00",
+        "close": "16:00",
+        "bands": [
+            {
+                "name": "Lydia BaoBao",
+                "genre": [
+                    "pop"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 1,
+        "month": 8,
+        "date": 5,
+        "desc": "Live Music",
+        "venue": "The Wanch, 1/F, Henan Bldg., 90 Jaffe Rd, Wan Chai 灣仔謝斐道90號豫港大廈1樓",
+        "open": "19:00",
+        "close": "22:30",
+        "bands": [
+            {
+                "name": "Steve",
+                "genre": [
+                    "acoustic"
+                ]
+            },
+            {
+                "name": "Mark & John",
+                "genre": [
+                    "jam session"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 1,
+        "month": 8,
+        "date": 5,
+        "desc": "Live Music",
+        "venue": "Champagne Bar, Lobby, Grand Hyatt Hong Kong 1 Harbour Rd, Wanchai. 香檳吧,香港君悅酒店,灣仔港灣道1號",
+        "open": "20:45",
+        "close": "23:45",
+        "bands": [
+            {
+                "name": "Jennifer Palor",
+                "genre": [
+                    "jazz"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 1,
+        "month": 8,
+        "date": 5,
+        "desc": "Live Music @ The Iron Fairies",
+        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central 中環荷李活道1-13號",
+        "open": "21:30",
+        "close": "00:30",
+        "bands": [
+            {
+                "name": "Jazz Night",
+                "genre": [
+                    "unknown"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 2,
+        "month": 8,
+        "date": 6,
+        "desc": "Live Music @ The Iron Fairies",
+        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central 中環荷李活道1-13號",
+        "open": "22:00",
+        "close": "01:00",
+        "bands": [
+            {
+                "name": "Rubicube",
+                "genre": [
+                    "pop rock"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 2,
+        "month": 8,
+        "date": 6,
+        "desc": "Live Music",
+        "venue": "Champagne Bar, Lobby, Grand Hyatt Hong Kong 1 Harbour Rd, Wanchai. 香檳吧,香港君悅酒店,灣仔港灣道1號",
+        "open": "20:45",
+        "close": "23:45",
+        "bands": [
+            {
+                "name": "Jennifer Palor",
+                "genre": [
+                    "jazz"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 3,
+        "month": 8,
+        "date": 7,
+        "desc": "Live Music @ The Iron Fairies",
+        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central 中環荷李活道1-13號",
+        "open": "22:00",
+        "close": "01:00",
+        "bands": [
+            {
+                "name": "A.R.T.",
+                "genre": [
+                    "pop"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 3,
+        "month": 8,
+        "date": 7,
+        "desc": "Live Music",
+        "venue": "The Sanctum, 3/F, Stanley 11, 11 Stanley St., Central 中環士丹利街11號Stanley 11 3樓",
+        "open": "21:00",
+        "close": "00:00",
+        "bands": [
+            {
+                "name": "Billy Alexander & Janaia Farrell",
+                "genre": [
+                    "jazz"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 3,
+        "month": 8,
+        "date": 7,
+        "desc": "Live Music",
+        "venue": "Champagne Bar, Lobby, Grand Hyatt Hong Kong 1 Harbour Rd, Wanchai. 香檳吧,香港君悅酒店,灣仔港灣道1號",
+        "open": "20:45",
+        "close": "23:45",
+        "bands": [
+            {
+                "name": "Jennifer Palor",
+                "genre": [
+                    "jazz"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 4,
+        "month": 8,
+        "date": 8,
+        "desc": "Live Music @ The Iron Fairies",
+        "venue": "Iron Fairies, 1-13 Hollywood Rd, Central 中環荷李活道1-13號",
+        "open": "22:00",
+        "close": "01:00",
+        "bands": [
+            {
+                "name": "The Flow Band with Wendy Robin",
+                "genre": [
+                    "pop",
+                    "r&b"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 4,
+        "month": 8,
+        "date": 8,
+        "desc": "Jazz Jam & Open Mic",
+        "venue": "Cheek to Cheek Soho, 17 Old Bailey St, Central中環奧卑利街17號",
+        "open": "19:00",
+        "close": "00:00",
+        "bands": [
+            {
+                "name": "Jazz Jam Nite",
+                "genre": [
+                    "jam session"
+                ]
+            }
+        ],
+        "tickets": {
+            "standard": 0
+        }
+    },
+    {
+        "weekday": 4,
+        "month": 8,
+        "date": 8,
+        "desc": "Live Music",
+        "venue": "Champagne Bar, Lobby, Grand Hyatt Hong Kong 1 Harbour Rd, Wanchai. 香檳吧,香港君悅酒店,灣仔港灣道1號",
+        "open": "20:45",
+        "close": "23:45",
+        "bands": [
+            {
+                "name": "Jennifer Palor",
+                "genre": [
+                    "jazz"
                 ]
             }
         ],
