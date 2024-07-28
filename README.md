@@ -1,6 +1,6 @@
-# gigshk-pipeline
+# gigsgo-pipeline
 
-ETL pipeline for gigshk data
+ETL pipeline for gigs data
 
 ## Operation
 

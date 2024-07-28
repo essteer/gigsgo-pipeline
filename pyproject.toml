@@ -1,5 +1,5 @@
 [project]
-name = "gigshk-pipeline"
+name = "gigsgo-pipeline"
 dynamic = ["version"]
 description = "An ETL pipeline for gig data"
 authors = [{ name = "Elliott Steer", email = "essteer@pm.me" }]
@@ -31,6 +31,6 @@ dev = [
 ]
 
 [project.urls]
-documentation = "https://github.com/essteer/gigshk-pipeline/blob/main/README.md"
-repository = "https://github.com/essteer/gigshk-pipeline"
-issues = "https://github.com/essteer/gigshk-pipeline/issues"
+documentation = "https://github.com/essteer/gigsgo-pipeline/blob/main/README.md"
+repository = "https://github.com/essteer/gigsgo-pipeline"
+issues = "https://github.com/essteer/gigsgo-pipeline/issues"
