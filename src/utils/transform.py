@@ -148,7 +148,7 @@ def split_genres(genres: str) -> list[str]:
         genres separated into list elements
     """
     # Ignore place names and band names
-    if any(loc in genres.lower() for loc in NOT_GENRES):
+    if any(non_genre_names in genres.lower() for non_genre_names in NOT_GENRES):
         return None
     # Ignore strings with phone numbers
     if re.match(r".*([\d]{4}[-\s]?[\d]{4}).*", genres):
@@ -220,7 +220,7 @@ def parse_band_name(band_string: str) -> str:
     band : str
         band name
     """
-    # Grab text until a "(" sign
+    # Grab text up to (not including) a "(" sign
     pattern = re.compile(r"([^\(]+)\s*\(?")
     # Get band name
     match = pattern.search(band_string.strip())
@@ -270,38 +270,28 @@ def format_matches(matches: list[re.Match]) -> list[dict]:
 
     Returns
     -------
-    instance_list : list[dict]
+    event_matches : list[dict]
         list of matches formatted into dict objects
     """
-    # List to store instances
-    instance_list = list()
-    # Add matches to list
+    event_matches = list()
     for match in matches:
         # Create dict object
         event = {
             key: (value.strip() if value is not None else None)  # handle missing values
             for key, value in match.groupdict().items()
         }
-        # Convert weekday names to digits
         event["weekday"] = convert_days_to_digits(event["weekday"])
-        # Convert month and date strings to int
         event["month"] = int(event["month"])
         event["date"] = int(event["date"])
 
         if event["desc"] == "":
-            # Add description if missing
             event["desc"] = "Unknown"
 
-        # Convert times to 24-hour strings
         event["open"] = convert_to_24_hour_time(event["open"])
         event["close"] = convert_to_24_hour_time(event["close"])
-
-        # Get list of bands and their genres
         event["bands"] = parse_all_bands_and_genres(event["bands"])
-
-        # Parse ticket prices by tier
         event["tickets"] = convert_ticket_prices(event["tickets"])
-        # Add event to instance list
-        instance_list.append(event)
 
-    return instance_list
+        event_matches.append(event)
+
+    return event_matches

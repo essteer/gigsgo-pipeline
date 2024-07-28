@@ -16,8 +16,7 @@ def get_html(url: str) -> str:
             # Send header to prevent 403 error
             headers = masq(True, True)
             response = requests.get(url, headers=headers)
-            # Catch errors
-            response.raise_for_status()
+            response.raise_for_status()  # Catch errors
 
             return response.text
 
@@ -47,7 +46,6 @@ def preprocess_text(raw_text: str) -> str:
         raw_text cleaned via regex
     """
     text = raw_text.strip()
-    # Replace "&nbsp;" with single "\s" char
     text = re.sub(r"&nbsp;", " ", text)
     # Remove newlines created via "=" chars
     text = re.sub(r"=\s+", "", text)
@@ -60,7 +58,6 @@ def preprocess_text(raw_text: str) -> str:
     # Replace non-standard punctuation with ASCII versions
     text = text.replace("–", "-")
     text = text.replace("’", "'")
-    # Replace multiple "\s" chars with single "\s" char
     text = re.sub(r"\s+", " ", text)
 
     return text
@@ -80,7 +77,7 @@ def decode_quoted_printable_text(encoded_text: str) -> str:
     decoded_text : str
         text with Chinese characters converted to readable format
     """
-    # Convert Quoted Printable text to Chinese characters
+    # Convert Quoted Printable text to human-readable Chinese characters
     decoded_text = quopri.decodestring(encoded_text).decode("utf-8")
     # Replace non-standard punctuation with ASCII versions
     decoded_text = decoded_text.replace("–", "-")
@@ -137,7 +134,7 @@ def get_regex_matches(text: str) -> list[re.Match]:
         """,
         re.VERBOSE | re.DOTALL,
     )
-    # Find all matches
+
     matches = pattern.finditer(text)
 
     return matches
