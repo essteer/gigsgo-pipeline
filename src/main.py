@@ -6,8 +6,7 @@ import sys
 sys.path.append(os.path.join(os.path.dirname(__file__)))
 from utils.pipeline import data_pipeline
 
-# Path to save JSON under
-DATA_DIR = os.path.join(os.getcwd(), "data")
+JSON_SAVE_DIR = os.path.join(os.getcwd(), "data")
 
 
 def main():
@@ -37,8 +36,9 @@ def main():
             print(match, "\n")
 
     if args.save:
-        with open(os.path.join(DATA_DIR, "data.json"), "w") as f:
-            json.dump(formatted_matches, f)
+        with open(os.path.join(JSON_SAVE_DIR, "data.json"), "w") as f:
+            # set ensure_ascii=False to preserve Chinese characters in human-readable form
+            json.dump(formatted_matches, f, ensure_ascii=False, indent=4)
 
 
 if __name__ == "__main__":
