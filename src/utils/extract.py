@@ -120,7 +120,7 @@ def get_regex_matches(text: str) -> list[re.Match]:
         (:\d{2})?                           # Minutes (optional)
         \s*
         ([AaPp]{0,1}\s?[Mm]{0,1})?)             # am/pm (optional, with possible space before "m")
-        \s?-?\s?                             # hyphen with or without spaces
+        \s?[-–]?\s?                             # hyphen with or without spaces
         
         (?P<close>                          # End time
         (\d{1,2}(:\d{2})?\s*([AaPp]{0,1}\s?[Mm]{0,1})?  # Logic as per start time
@@ -128,7 +128,7 @@ def get_regex_matches(text: str) -> list[re.Match]:
         
         \s?Bands\s*樂[隊團]:\s?               # "Bands 樂隊:" or "Bands 樂團" (character variants)
         (?P<bands>.*?)                       # Bands info, non-greedy
-        \s?Ticket\s?(門|⾨)票:\s?              # "Ticket 門票" or "Ticket ⾨票" (character variants)
+        \s?T[iu]cket\s?(門|⾨)票:\s?              # "Ticket 門票" or "Ticket ⾨票" (character variants)
         (?P<tickets>.*?                       # Ticket info, non-greedy
         (?=([FMSTW][a-z]{2,5}day|Enjoy|Be |$)))  # Lookahead to day, "Enjoy" or end of string
         """,
