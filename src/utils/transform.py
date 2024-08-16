@@ -1,6 +1,7 @@
 import os
 import re
 import sys
+import uuid
 
 sys.path.append(os.path.join(os.path.dirname(__file__)))
 from maps import DAY_MAP, GENRE_MAP, NOT_GENRES, TIER_MAP
@@ -280,6 +281,7 @@ def format_matches(matches: list[re.Match]) -> list[dict]:
             key: (value.strip() if value is not None else None)  # handle missing values
             for key, value in match.groupdict().items()
         }
+        event["_id"] = str(uuid.uuid4())
         event["weekday"] = convert_days_to_digits(event["weekday"])
         event["month"] = int(event["month"])
         event["date"] = int(event["date"])
