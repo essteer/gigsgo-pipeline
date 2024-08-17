@@ -2,6 +2,7 @@ import os
 import re
 import sys
 import uuid
+from datetime import datetime
 
 sys.path.append(os.path.join(os.path.dirname(__file__)))
 from maps import DAY_MAP, GENRE_MAP, NOT_GENRES, TIER_MAP
@@ -274,25 +275,42 @@ def format_matches(matches: list[re.Match]) -> list[dict]:
     event_matches : list[dict]
         list of matches formatted into dict objects
     """
+    current_year = datetime.now().year
+    current_month = datetime.now().month
     event_matches = list()
+
     for match in matches:
-        # Create dict object
-        event = {
+        event_temp = {
             key: (value.strip() if value is not None else None)  # handle missing values
             for key, value in match.groupdict().items()
         }
+        event = dict()
         event["_id"] = str(uuid.uuid4())
-        event["weekday"] = convert_days_to_digits(event["weekday"])
-        event["month"] = int(event["month"])
-        event["date"] = int(event["date"])
 
-        if event["desc"] == "":
+        if int(event_temp["month"]) >= current_month:
+            event_year = current_year
+        else:
+            event_year = current_year + 1
+        event_month = int(event_temp["month"])
+        event_date = int(event_temp["date"])
+
+        event["datestring"] = f"{event_year}-{event_month:02d}-{event_date:02d}"
+        event["year"] = event_year
+        event["month"] = event_month
+        event["date"] = event_date
+        event["day"] = convert_days_to_digits(event_temp["weekday"])
+        event["weekday"] = event_temp["weekday"]
+
+        event["open"] = convert_to_24_hour_time(event_temp["open"])
+        event["close"] = convert_to_24_hour_time(event_temp["close"])
+
+        event["venue"] = event_temp["venue"]
+        if event_temp["desc"] == "":
             event["desc"] = "Unknown"
-
-        event["open"] = convert_to_24_hour_time(event["open"])
-        event["close"] = convert_to_24_hour_time(event["close"])
-        event["bands"] = parse_all_bands_and_genres(event["bands"])
-        event["tickets"] = convert_ticket_prices(event["tickets"])
+        else:
+            event["desc"] = event_temp["desc"]
+        event["bands"] = parse_all_bands_and_genres(event_temp["bands"])
+        event["tickets"] = convert_ticket_prices(event_temp["tickets"])
 
         event_matches.append(event)
 
