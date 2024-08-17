@@ -69,7 +69,10 @@ class TestDataPipeline(unittest.TestCase):
         for test_case in TEST_CASES:
             matches = data_pipeline(test_case, False)
             for match in matches:
-                self.assertIsInstance(match["weekday"], int)
+                self.assertIsInstance(match["_id"], str)
+                self.assertIsInstance(match["datestring"], str)
+                self.assertIsInstance(match["weekday"], str)
+                self.assertIsInstance(match["day"], int)
                 self.assertIsInstance(match["month"], int)
                 self.assertIsInstance(match["date"], int)
                 self.assertIsInstance(match["desc"], str)
@@ -81,7 +84,10 @@ class TestDataPipeline(unittest.TestCase):
         # NOTE: this test relies on external source, check source if not found
         matches = data_pipeline(TEST_URL)
         for match in matches:
-            self.assertIsInstance(match["weekday"], int)
+            self.assertIsInstance(match["_id"], str)
+            self.assertIsInstance(match["datestring"], str)
+            self.assertIsInstance(match["weekday"], str)
+            self.assertIsInstance(match["day"], int)
             self.assertIsInstance(match["month"], int)
             self.assertIsInstance(match["date"], int)
             self.assertIsInstance(match["desc"], str)
