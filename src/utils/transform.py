@@ -5,7 +5,7 @@ import uuid
 from datetime import datetime
 
 sys.path.append(os.path.join(os.path.dirname(__file__)))
-from maps import DAY_MAP, GENRE_MAP, NOT_GENRES, TIER_MAP
+from maps import ADDRESS_MAP, DAY_MAP, GENRE_MAP, NOT_GENRES, TIER_MAP, VENUE_MAP
 
 
 def convert_days_to_digits(day_string) -> int:
@@ -261,6 +261,27 @@ def parse_all_bands_and_genres(bands_string: str) -> list[dict]:
     return new_bands_list
 
 
+def parse_known_venues(full_address: str) -> str:
+    """
+    Searches an address string for a known venue name
+    to facilitate getting a standardised address
+    
+    Parameters
+    ----------
+    full_address : str
+        raw address string to search for venue name in
+
+    Returns
+    -------
+    _ : str
+        venue name from VENUE_MAP
+    """
+    compressed_address = full_address.lower().replace(" ", "").replace(",", "").replace(".", "")
+    for key in VENUE_MAP:
+        if key in compressed_address:
+            return VENUE_MAP[key]
+
+
 def format_matches(matches: list[re.Match]) -> list[dict]:
     """
     Applies standard format to matched entities
@@ -304,7 +325,14 @@ def format_matches(matches: list[re.Match]) -> list[dict]:
         event["open"] = convert_to_24_hour_time(event_temp["open"])
         event["close"] = convert_to_24_hour_time(event_temp["close"])
 
-        event["venue"] = event_temp["venue"]
+        venue = parse_known_venues(event_temp["venue"])
+        if venue:
+            event["venue"] = venue
+            event["address_en"] = ADDRESS_MAP[venue][0]
+            event["address_cn"] = ADDRESS_MAP[venue][1]
+        else:
+            event["address_raw"] = event_temp["venue"]
+        
         if event_temp["desc"] == "":
             event["desc"] = "Unknown"
         else:

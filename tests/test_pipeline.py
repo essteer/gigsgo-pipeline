@@ -46,11 +46,15 @@ class TestDataPipeline(unittest.TestCase):
                 self.assertIn("month", match)
                 self.assertIn("date", match)
                 self.assertIn("desc", match)
-                self.assertIn("venue", match)
                 self.assertIn("open", match)
                 self.assertIn("close", match)
                 self.assertIn("bands", match)
                 self.assertIn("tickets", match)
+                if "venue" in match:
+                    self.assertIn("address_en", match)
+                    self.assertIn("address_cn", match)
+                else:
+                    self.assertIn("address_raw", match)
         # NOTE: this test relies on external source, check source if not found
         matches = data_pipeline(TEST_URL)
         for match in matches:
@@ -58,11 +62,15 @@ class TestDataPipeline(unittest.TestCase):
             self.assertIn("month", match)
             self.assertIn("date", match)
             self.assertIn("desc", match)
-            self.assertIn("venue", match)
             self.assertIn("open", match)
             self.assertIn("close", match)
             self.assertIn("bands", match)
             self.assertIn("tickets", match)
+            if "venue" in match:
+                self.assertIn("address_en", match)
+                self.assertIn("address_cn", match)
+            else:
+                self.assertIn("address_raw", match)
 
     def test_match_content_types_correct(self):
         """Test values in each match dict are of expected types"""
@@ -76,11 +84,16 @@ class TestDataPipeline(unittest.TestCase):
                 self.assertIsInstance(match["month"], int)
                 self.assertIsInstance(match["date"], int)
                 self.assertIsInstance(match["desc"], str)
-                self.assertIsInstance(match["venue"], str)
                 self.assertIsInstance(match["open"], str)
                 self.assertIsInstance(match["close"], str)
                 self.assertIsInstance(match["bands"], list)
                 self.assertIsInstance(match["tickets"], dict)
+                if "venue" in match:
+                    self.assertIsInstance(match["venue"], str)
+                    self.assertIsInstance(match["address_en"], str)
+                    self.assertIsInstance(match["address_cn"], str)
+                else:
+                    self.assertIsInstance(match["address_raw"], str)
         # NOTE: this test relies on external source, check source if not found
         matches = data_pipeline(TEST_URL)
         for match in matches:
@@ -91,11 +104,16 @@ class TestDataPipeline(unittest.TestCase):
             self.assertIsInstance(match["month"], int)
             self.assertIsInstance(match["date"], int)
             self.assertIsInstance(match["desc"], str)
-            self.assertIsInstance(match["venue"], str)
             self.assertIsInstance(match["open"], str)
             self.assertIsInstance(match["close"], str)
             self.assertIsInstance(match["bands"], list)
             self.assertIsInstance(match["tickets"], dict)
+            if "venue" in match:
+                self.assertIsInstance(match["venue"], str)
+                self.assertIsInstance(match["address_en"], str)
+                self.assertIsInstance(match["address_cn"], str)
+            else:
+                self.assertIsInstance(match["address_raw"], str)
 
 
 if __name__ == "__main__":
