@@ -3,6 +3,7 @@ import sys
 import unittest
 
 sys.path.append(os.path.join(os.path.dirname(__file__)))
+from src.utils.maps import ADDRESS_MAP
 from src.utils.transform import (
     convert_days_to_digits,
     convert_to_24_hour_time,
@@ -12,6 +13,7 @@ from src.utils.transform import (
     parse_genres,
     parse_band_name,
     parse_all_bands_and_genres,
+    parse_known_venues
 )
 
 
@@ -268,6 +270,20 @@ class TestParseAllBandsAndGenres(unittest.TestCase):
                 {"name": "AMET", "genre": ["adipiscing", "consectetur"]},
             ],
         )
+
+
+class TestParseKnownVenues(unittest.TestCase):
+    def test_no_matches(self):
+        """Unknown venues should return None"""
+        fake_venue = "qwerty"
+        venue = parse_known_venues(fake_venue)
+        self.assertIsNone(venue)
+    
+    def test_known_matches(self):
+        """Known venues should return string that is key in ADDRESS_MAP"""
+        real_venue = "Maggie Choo’s, G/F Chinachem Hollywood Centre, Central, 中環華懋荷李活中心"
+        venue = parse_known_venues(real_venue)
+        self.assertIn(venue, ADDRESS_MAP)
 
 
 if __name__ == "__main__":
