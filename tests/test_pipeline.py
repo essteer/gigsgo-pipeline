@@ -12,7 +12,7 @@ from tests.assets.ex04 import HTML_4
 
 TEST_ASSETS = os.path.abspath(os.path.join("tests", "assets"))
 TEST_CASES = [HTML_1, HTML_2, HTML_3, HTML_4]
-TEST_URL = "https://undergroundhk.com/gig-guide-25-jul-8-aug-2024/"
+TEST_URL = "https://undergroundhk.com/gig-guide-22-august-5-september-2024/"
 
 
 class TestDataPipeline(unittest.TestCase):
@@ -24,7 +24,7 @@ class TestDataPipeline(unittest.TestCase):
                 sum(1 for _ in data_pipeline(test_case, False)), num_matches[test_case]
             )
         # NOTE: this test relies on external source, check source if not found
-        self.assertEqual(sum(1 for _ in data_pipeline(TEST_URL)), 83)
+        self.assertEqual(sum(1 for _ in data_pipeline(TEST_URL)), 109)
 
     def test_matches_are_dicts(self):
         """Test all matches in dict format"""

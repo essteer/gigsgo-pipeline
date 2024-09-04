@@ -7,7 +7,6 @@ from src.main import main, JSON_SAVE_DIR
 class TestMain(unittest.TestCase):
     
     def setUp(self):
-        # Ensure the assets dir exists before each test
         os.makedirs(JSON_SAVE_DIR, exist_ok=True)
 
     @patch("src.main.data_pipeline")
