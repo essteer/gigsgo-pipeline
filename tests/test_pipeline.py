@@ -12,7 +12,6 @@ from tests.assets.ex04 import HTML_4
 
 TEST_ASSETS = os.path.abspath(os.path.join("tests", "assets"))
 TEST_CASES = [HTML_1, HTML_2, HTML_3, HTML_4]
-TEST_URL = "https://undergroundhk.com/gig-guide-22-august-5-september-2024/"
 
 
 class TestDataPipeline(unittest.TestCase):
@@ -23,8 +22,6 @@ class TestDataPipeline(unittest.TestCase):
             self.assertEqual(
                 sum(1 for _ in data_pipeline(test_case, False)), num_matches[test_case]
             )
-        # NOTE: this test relies on external source, check source if not found
-        self.assertEqual(sum(1 for _ in data_pipeline(TEST_URL)), 109)
 
     def test_matches_are_dicts(self):
         """Test all matches in dict format"""
@@ -32,10 +29,6 @@ class TestDataPipeline(unittest.TestCase):
             matches = data_pipeline(test_case, False)
             for match in matches:
                 self.assertIsInstance(match, dict)
-        # NOTE: this test relies on external source, check source if not found
-        matches = data_pipeline(TEST_URL)
-        for match in matches:
-            self.assertIsInstance(match, dict)
 
     def test_expected_fields_present(self):
         """Test expected fields present"""
@@ -55,22 +48,6 @@ class TestDataPipeline(unittest.TestCase):
                     self.assertIn("address_cn", match)
                 else:
                     self.assertIn("address_raw", match)
-        # NOTE: this test relies on external source, check source if not found
-        matches = data_pipeline(TEST_URL)
-        for match in matches:
-            self.assertIn("weekday", match)
-            self.assertIn("month", match)
-            self.assertIn("date", match)
-            self.assertIn("desc", match)
-            self.assertIn("open", match)
-            self.assertIn("close", match)
-            self.assertIn("bands", match)
-            self.assertIn("tickets", match)
-            if "venue" in match:
-                self.assertIn("address_en", match)
-                self.assertIn("address_cn", match)
-            else:
-                self.assertIn("address_raw", match)
 
     def test_match_content_types_correct(self):
         """Test values in each match dict are of expected types"""
@@ -94,26 +71,6 @@ class TestDataPipeline(unittest.TestCase):
                     self.assertIsInstance(match["address_cn"], str)
                 else:
                     self.assertIsInstance(match["address_raw"], str)
-        # NOTE: this test relies on external source, check source if not found
-        matches = data_pipeline(TEST_URL)
-        for match in matches:
-            self.assertIsInstance(match["_id"], str)
-            self.assertIsInstance(match["datestring"], str)
-            self.assertIsInstance(match["weekday"], str)
-            self.assertIsInstance(match["day"], int)
-            self.assertIsInstance(match["month"], int)
-            self.assertIsInstance(match["date"], int)
-            self.assertIsInstance(match["desc"], str)
-            self.assertIsInstance(match["open"], str)
-            self.assertIsInstance(match["close"], str)
-            self.assertIsInstance(match["bands"], list)
-            self.assertIsInstance(match["tickets"], dict)
-            if "venue" in match:
-                self.assertIsInstance(match["venue"], str)
-                self.assertIsInstance(match["address_en"], str)
-                self.assertIsInstance(match["address_cn"], str)
-            else:
-                self.assertIsInstance(match["address_raw"], str)
 
 
 if __name__ == "__main__":
