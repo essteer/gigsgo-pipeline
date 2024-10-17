@@ -1,4 +1,4 @@
-name: ruff
+name: Formatting
 on:
   # Trigger workflow on main branch push or pull request 
   push:
@@ -15,5 +15,5 @@ jobs:
       - uses: chartboost/ruff-action@v1
         with:
           # Ruff version - sync with .pre-commit-config.yaml
-          version: "0.4.10"
+          version: "0.6.9"
           args: check --fix --exit-non-zero-on-fix --show-fixes

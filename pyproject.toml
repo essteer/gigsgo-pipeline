@@ -1,7 +1,7 @@
 [project]
 name = "gigsgo-pipeline"
 dynamic = ["version"]
-description = "An ETL pipeline for gig data"
+description = "An ETL pipeline for live music listings"
 authors = [{ name = "Elliott Steer", email = "essteer@pm.me" }]
 dependencies = [
     "beautifulsoup4==4.12.3",
@@ -22,12 +22,13 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
 ]
 
 [project.optional-dependencies]
 dev = [
     "pre-commit==3.7.1",
-    "ruff>=0.4.10",
+    "ruff==0.6.9",
 ]
 
 [project.urls]
