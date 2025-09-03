@@ -6,7 +6,7 @@ authors = [{ name = "Elliott Steer", email = "essteer@pm.me" }]
 dependencies = [
     "beautifulsoup4==4.12.3",
     "masquer==1.2.0",
-    "requests==2.32.3",
+    "requests==2.32.4",
 ]
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
